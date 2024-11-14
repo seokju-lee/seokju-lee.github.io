@@ -19,12 +19,12 @@ I wrote "about me", "career", and "interests" on this page as an example.
     * M.S. Thesis: Slip-Compensated Legged Robot State Estimation Using Latent Space Attention Mechanisms
 * Ulsan National Institute of Science and Technology (UNIST) (2020/03 ~ 2023/02)
   * Bachelor's Degree, Electrical Engineering (Graduate Representative, Early Graudation)
-    * Total GPA: 4.07/4.3     Major GPA: 4.13/4.30
+    * Total GPA: 4.07/4.3 &nbsp;&nbsp;&nbsp;&nbsp; Major GPA: 4.13/4.30
 * Chungbuk Science High School (2017/02 ~ 2020/02)
 
 <br/>
 
 # Publications
-[C1] **Seokju Lee**, Seunghun Jeon, and Jemin Hwangbo. *Learning Legged Mobile Manipulation Using Reinforcement Learning*. In *International Conference on Robot Intelligence Technology and Applications*, pages 310-317. Cham: Springer International Publishing, 2022.
+[C1] **Seokju Lee**, Seunghun Jeon, and Jemin Hwangbo. Learning Legged Mobile Manipulation Using Reinforcement Learning. In *International Conference on Robot Intelligence Technology and Applications*, pages 310-317. Cham: Springer International Publishing, 2022.
 
-[J1] Yunji Jung, **Seokju Lee**, Tair Djanibekov, Hyunjung Shim, and Jong Chul Ye. *Latent Inversion with Timestep-aware Sampling for Training-free Non-rigid Editing*. *arXiv preprint arXiv:2402.08601*, 2024.
+[J1] Yunji Jung, **Seokju Lee**, Tair Djanibekov, Hyunjung Shim, and Jong Chul Ye. Latent Inversion with Timestep-aware Sampling for Training-free Non-rigid Editing. *arXiv preprint arXiv:2402.08601*, 2024.
