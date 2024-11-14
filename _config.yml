@@ -23,7 +23,7 @@ social:
   google_plus:
   instagram:
   keybase:
-  linkedin: https://www.linkedin.com/in/seokju-lee/
+  linkedin: seokju-lee-33077b250
   pinterest:
   reddit:
   soundcloud:
@@ -34,7 +34,7 @@ social:
   twitter: 
   vimeo:
   wordpress:
-  youtube: https://www.youtube.com/@seokjulee7709
+  youtube: @seokjulee7709
   default_txt: "Follow On"
 
 # Build settings
@@ -51,7 +51,7 @@ plugins:
 
 # Permalinks
 permalink: /:year-:month-:day/:title
-paginate_path: "/portfolio/page:num/"
+paginate_path: "/Course Project/page:num/"
 paginate: 5
 exclude:
   - "Gemfile"

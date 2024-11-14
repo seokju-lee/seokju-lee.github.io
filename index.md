@@ -10,7 +10,7 @@ I am deeply passionate about the intersection of legged robotics and reinforceme
 # Education
 * Korea Advanced Institue of Science and Technology (KAIST) (2025/03 ~ (in progress))
   * Ph.D. Candidate, Mechanical Engineering
-    * Mechatronics, System and Control Lab (Advisor: Prof. Kyung-Soo Kim)\
+    * Mechatronics, System and Control Lab (Advisor: Prof. Kyung-Soo Kim)
 * Korea Advanced Institue of Science and Technology (KAIST) (2023/03 ~ 2025/02)
   * Master's Degree, Mechanical Engineering
     * Mechatronics, System and Control Lab (Advisor: Prof. Kyung-Soo Kim)
@@ -20,7 +20,6 @@ I am deeply passionate about the intersection of legged robotics and reinforceme
     * Total GPA: 4.07/4.3 &nbsp;&nbsp;&nbsp;&nbsp; Major GPA: 4.13/4.30
 * Chungbuk Science High School (2017/02 ~ 2020/02)
 
-<br/>
 
 # Honors, Awards, and Scholarships
 * Summa Cum Laude, UNIST (2023.02)
@@ -62,4 +61,6 @@ I am deeply passionate about the intersection of legged robotics and reinforceme
 # Publications
 [C1] **Seokju Lee**, Seunghun Jeon, and Jemin Hwangbo. Learning Legged Mobile Manipulation Using Reinforcement Learning. In *International Conference on Robot Intelligence Technology and Applications*, pages 310-317. Cham: Springer International Publishing, 2022.
 
-[J1] Yunji Jung, **Seokju Lee**, Tair Djanibekov, Hyunjung Shim, and Jong Chul Ye. Latent Inversion with Timestep-aware Sampling for Training-free Non-rigid Editing. *arXiv preprint arXiv:2402.08601*, 2024.
+[J1] Yunji Jung, **Seokju Lee**, Tair Djanibekov, Hyunjung Shim, and Jong Chul Ye. Latent Inversion with Timestep-aware Sampling for Training-free Non-rigid Editing. *arXiv preprint arXiv:2402.08601*, 2024. (Pattern Recognition Letters Under Review)
+
+<br/>
