@@ -25,5 +25,6 @@ I wrote "about me", "career", and "interests" on this page as an example.
 <br/>
 
 # Publications
-[C1] \textbf{Seokju Lee}, Seunghun Jeon, and Jemin Hwangbo. Learning Legged Mobile Manipulation Using Reinforcement Learning. In \textitP{International Conference on Robot Intelligence Technology and Applications.} pages 310-317. Cham: Springer International Publishing, 2022.
-[J1] Yunji Jung, \textbf{Seokju Lee}, Tair Djanibekov, Hyunjung Shim, and Jong Chul Ye. Latent Inversion with Timestep-aware Sampling for Training-free Non-rigid Editing. \textit{arXiv preprint arXiv:2402.08601}, 2024.
+[C1] **Seokju Lee**, Seunghun Jeon, and Jemin Hwangbo. *Learning Legged Mobile Manipulation Using Reinforcement Learning*. In *International Conference on Robot Intelligence Technology and Applications*, pages 310-317. Cham: Springer International Publishing, 2022.
+
+[J1] Yunji Jung, **Seokju Lee**, Tair Djanibekov, Hyunjung Shim, and Jong Chul Ye. *Latent Inversion with Timestep-aware Sampling for Training-free Non-rigid Editing*. *arXiv preprint arXiv:2402.08601*, 2024.
