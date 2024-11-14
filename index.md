@@ -17,7 +17,7 @@ I am deeply passionate about the intersection of legged robotics and reinforceme
     * M.S. Thesis: Slip-Compensated Legged Robot State Estimation Using Latent Space Attention Mechanisms
 * Ulsan National Institute of Science and Technology (UNIST) (2020/03 ~ 2023/02)
   * Bachelor's Degree, Electrical Engineering (Graduate Representative, Early Graudation)
-    * Total GPA: 4.07/4.3 &nbsp;&nbsp;&nbsp;&nbsp; Major GPA: 4.13/4.30
+    * Total GPA: 4.07/4.3 (rank: 9/283, major rank: 2/37) &nbsp;&nbsp; Major GPA: 4.13/4.30
 * Chungbuk Science High School (2017/02 ~ 2020/02)
 
 
