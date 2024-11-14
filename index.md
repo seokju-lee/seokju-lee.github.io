@@ -9,7 +9,7 @@ I wrote "about me", "career", and "interests" on this page as an example.
 
 <br/>
 
-# Career
+# Education
 * Second Company (2012/01 ~ )
   * Web Application Firewall
     * Developed TCP network acceleration module.
