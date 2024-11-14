@@ -7,9 +7,9 @@ google_analytics: # Tracking ID, e.g. "UA-000000-01"
 # Author
 author:
   name: Seokju Lee
-  desc: Hello nice to meet you
+  desc: M.S. Student @ KAIST
   email: dltjrwn0322@kaist.ac.kr
-  selfie: assets/img/profile.jpg
+  selfie: assets/img/seokju.jpg
 
 # social
 social:
@@ -17,13 +17,13 @@ social:
   behance:
   bitbucket:
   dribbble:
-  facebook: Test
+  facebook: 
   flickr:
-  github: kssim
+  github: seokju-lee
   google_plus:
   instagram:
   keybase:
-  linkedin: https://www.linkedin.com/in/kssim/ 
+  linkedin: https://www.linkedin.com/in/seokju-lee/
   pinterest:
   reddit:
   soundcloud:
@@ -31,10 +31,10 @@ social:
   steam:
   tumblr:
   gitlab:
-  twitter: Test
+  twitter: 
   vimeo:
   wordpress:
-  youtube:
+  youtube: https://www.youtube.com/@seokjulee7709
   default_txt: "Follow On"
 
 # Build settings
