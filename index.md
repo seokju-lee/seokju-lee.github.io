@@ -10,17 +10,20 @@ I wrote "about me", "career", and "interests" on this page as an example.
 <br/>
 
 # Education
-* Second Company (2012/01 ~ )
-  * Web Application Firewall
-    * Developed TCP network acceleration module.
-    * Developde Application User Interface.
-* First Company (2011/01 ~ 2011/12)
-  * VPN Development Company
-  * Team Leader of VPN Development Div.
+* Korea Advanced Institue of Science and Technology (KAIST) (2025/03 ~ (in progress))
+  * Ph.D. Candidate, Mechanical Engineering
+    * Mechatronics, System and Control Lab (Advisor: Prof. Kyung-Soo Kim)\
+* Korea Advanced Institue of Science and Technology (KAIST) (2023/03 ~ 2025/02)
+  * Master's Degree, Mechanical Engineering
+    * Mechatronics, System and Control Lab (Advisor: Prof. Kyung-Soo Kim)
+    * M.S. Thesis: Slip-Compensated Legged Robot State Estimation Using Latent Space Attention Mechanisms
+* Ulsan National Institute of Science and Technology (UNIST) (2020/03 ~ 2023/02)
+  * Bachelor's Degree, Electrical Engineering (Graduate Representative, Early Graudation)
+    * Total GPA: 4.07/4.3     Major GPA: 4.13/4.30
+* Chungbuk Science High School (2017/02 ~ 2020/02)
 
 <br/>
 
-# Interests
-I am interested in technology trends.  
-I'm not afraid to learn languages, but I enjoy using Python.  
-I like to automate and reduce annoying things.  
+# Publications
+[C1] \textbf{Seokju Lee}, Seunghun Jeon, and Jemin Hwangbo. Learning Legged Mobile Manipulation Using Reinforcement Learning. In \textitP{International Conference on Robot Intelligence Technology and Applications.} pages 310-317. Cham: Springer International Publishing, 2022.
+[J1] Yunji Jung, \textbf{Seokju Lee}, Tair Djanibekov, Hyunjung Shim, and Jong Chul Ye. Latent Inversion with Timestep-aware Sampling for Training-free Non-rigid Editing. \textit{arXiv preprint arXiv:2402.08601}, 2024.
