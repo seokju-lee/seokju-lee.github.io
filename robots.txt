@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://seokju-lee.github.io/al-folio/sitemap.xml
+Sitemap: https://seokju-lee.github.io/sitemap.xml
