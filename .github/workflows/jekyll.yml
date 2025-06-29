@@ -1,9 +1,9 @@
-name: Build & Deploy Jekyll Site
+name: Build & Deploy Jekyll Site (official)
 
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read      # 체크아웃용
+  pages: write        # Pages API 호출 권한
+  id-token: write     # OIDC 인증
 
 on:
   push:
@@ -11,9 +11,8 @@ on:
       - main
 
 jobs:
-  build-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -30,12 +29,18 @@ jobs:
       - name: Bundle install
         run: bundle _2.4.22_ install --jobs 4 --retry 3
 
-      - name: Build site
+      - name: Build site with Jekyll
         run: bundle exec jekyll build --destination _site
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: main
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
+        # secrets.GITHUB_TOKEN 자동 사용
