@@ -1,35 +1,41 @@
-name: CI / Build & Deploy Jekyll Site
+name: Build & Deploy to gh-pages
 
+# GitHub Pages API 사용 권한
 permissions:
-  contents: write
-  pages: write
-  id-token: write
+  contents: read       # 코드 체크아웃
+  pages: write         # Pages 배포
+  id-token: write      # peaceiris/actions-gh-pages
 
 on:
   push:
     branches:
-      - main   # 기본 브랜치 이름
+      - main          # 기본 브랜치 이름
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - uses: ruby/setup-ruby@v1
+      - name: Set up Ruby 2.7
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7
           cache: bundler
 
-      - run: gem install bundler -v 2.4.22
+      - name: Install Bundler 2.4.22
+        run: gem install bundler -v 2.4.22
 
-      - run: bundle _2.4.22_ install --jobs 4 --retry 3
+      - name: Bundle install
+        run: bundle _2.4.22_ install --jobs 4 --retry 3
 
-      - run: bundle exec jekyll build --destination _site
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --destination _site
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          publish_branch: main   # ← 여기 반드시 main(or master)
+          publish_branch: gh-pages
