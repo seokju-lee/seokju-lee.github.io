@@ -1,41 +1,42 @@
-name: Build & Deploy to gh-pages
+name: Build & Deploy Personal Site
 
-# GitHub Pages API 사용 권한
+# GitHub Pages 권한 설정
 permissions:
-  contents: read       # 코드 체크아웃
-  pages: write         # Pages 배포
-  id-token: write      # peaceiris/actions-gh-pages
+  contents: write   # main 브랜치 푸시 권한
+  pages: write      # GitHub Pages 배포 권한
+  id-token: write   # Actions deploy 권한
 
 on:
   push:
     branches:
-      - main          # 기본 브랜치 이름
+      - main       # 변경 감지할 브랜치
 
 jobs:
-  build-and-deploy:
+  build-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+    1. Checkout  
+      uses: actions/checkout@v3
 
-      - name: Set up Ruby 2.7
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.7
-          cache: bundler
+    2. Ruby + Bundler 설정  
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7
+        cache: bundler  
 
-      - name: Install Bundler 2.4.22
-        run: gem install bundler -v 2.4.22
+    3. Bundler 설치  
+      run: gem install bundler -v 2.4.22
 
-      - name: Bundle install
-        run: bundle _2.4.22_ install --jobs 4 --retry 3
+    4. Gem 설치  
+      run: bundle _2.4.22_ install --jobs 4 --retry 3
 
-      - name: Build Jekyll site
-        run: bundle exec jekyll build --destination _site
+    5. Jekyll 빌드  
+      run: bundle exec jekyll build --destination _site
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: gh-pages
+    6. 페이지 배포  
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site
+        publish_branch: main   # main 브랜치 루트에 배포
