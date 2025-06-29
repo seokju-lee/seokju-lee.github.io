@@ -1,6 +1,5 @@
 name: Build & Deploy Personal Site
 
-# GITHUB_TOKEN 기본 권한 + pages API 사용 권한
 permissions:
   contents: write
   pages: write
@@ -8,39 +7,25 @@ permissions:
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # 1. 코드 체크아웃
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      # 2. Ruby + Bundler 세팅
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7
           cache: bundler
 
-      # 3. Bundler 설치 (2.7에서 동작하는 버전)
-      - name: Install Bundler
-        run: gem install bundler -v 2.4.22
+      - run: gem install bundler -v 2.4.22
+      - run: bundle _2.4.22_ install --jobs 4 --retry 3
+      - run: bundle exec jekyll build --destination _site
 
-      # 4. Gem 의존성 설치
-      - name: Bundle install
-        run: bundle _2.4.22_ install --jobs 4 --retry 3
-
-      # 5. Jekyll 사이트 빌드
-      - name: Build site with Jekyll
-        run: bundle exec jekyll build --destination _site
-
-      # 6. Pages용 아티팩트로 업로드
       - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
@@ -48,6 +33,4 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      # 7. GitHub Pages API로 배포
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+      - uses: actions/deploy-pages@v1
