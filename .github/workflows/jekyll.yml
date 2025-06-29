@@ -12,25 +12,37 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      artifact: pages
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - uses: ruby/setup-ruby@v1
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: 2.7
           cache: bundler
 
-      - run: gem install bundler -v 2.4.22
-      - run: bundle _2.4.22_ install --jobs 4 --retry 3
-      - run: bundle exec jekyll build --destination _site
+      - name: Install Bundler
+        run: gem install bundler -v 2.4.22
+
+      - name: Bundle install
+        run: bundle _2.4.22_ install --jobs 4 --retry 3
+
+      - name: Build site
+        run: bundle exec jekyll build --destination _site
 
       - name: Upload artifact for Pages
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           path: _site
+          # artifact_name defaults to "pages", so deploy-pages can pick it up
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/deploy-pages@v1
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
+        # deploy-pages@v1 will look for the "pages" artifact from the same run
