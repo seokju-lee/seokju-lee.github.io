@@ -18,7 +18,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1        # 여러분의 Gemfile에 맞는 버전
+          ruby-version: 2.7        # 여러분의 Gemfile에 맞는 버전
           cache: bundler           # Bundler 캐시 활성화
 
       # 3. Bundler 설치 (필요한 경우)
