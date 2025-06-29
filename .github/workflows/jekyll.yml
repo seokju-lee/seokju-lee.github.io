@@ -23,11 +23,11 @@ jobs:
 
       # 3. Bundler 설치 (필요한 경우)
       - name: Install Bundler
-        run: gem install bundler
+        run: gem install bundler -v 2.4.22
 
       # 4. Gem 의존성 설치
       - name: Bundle install
-        run: bundle install --jobs 4 --retry 3
+        run: bundle _2.4.22_ install --jobs 4 --retry 3
 
       # 5. Jekyll 사이트 빌드
       - name: Build site with Jekyll
