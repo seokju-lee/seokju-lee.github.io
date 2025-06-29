@@ -77,7 +77,7 @@ include: ['_pages']
 # plugins
 plugins:
     - jekyll-paginate
-    - jekyll/scholar
+    - jekyll-scholar
     - jemoji
 
 # Jekyll-Scholar
