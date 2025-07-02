@@ -9,13 +9,15 @@ description: A collection of learning resources.
 ### teaching
 
 * (Spring 2025: TA, KAIST): Multidisciplinary Capstone Design
+    * Patent Name: Robot navigation system for the blind man
+    * advising the idea for patent
 
 * (Spring 2025: TA, KAIST): Linear System Control
     * preparing course materials and assignments
     * grading the quizzes, and exams
 
 * (Spring, Fall 2021, 2022: TA, UNIST): Calculus
-    * grading the quizzes, replying the the questions of students
+    * grading the quizzes, replying the questions of students
 
 * (Spring 2021: Tutor, UNIST): General Physics
     * teaching general physics and problem-solving for freshmen
