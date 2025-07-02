@@ -8,7 +8,7 @@ description: A collection of learning resources.
 
 ### teaching
 
-* (Spring 2025: TA, KAIST): [Multidisciplinary Capstone Design]
+* (Spring 2025: TA, KAIST): Multidisciplinary Capstone Design
 
 * (Spring 2025: TA, KAIST): Linear System Control
     * preparing course materials and assignments
