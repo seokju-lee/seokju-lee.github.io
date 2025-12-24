@@ -1,55 +1,360 @@
+// Projects styles (cleaned up formatting)
+
 .project {
-    box-sizing: border-box;
-    float: left;
-    height: 250px;
-    padding: 10px;
-    vertical-align: middle;
-    width: 33.33%;
+  box-sizing: border-box;
+  float: left;
+  height: 250px;
+  padding: 10px;
+  vertical-align: middle;
+  width: 33.33%;
 
-    .thumbnail {
-        overflow: hidden;
-        height: 200px;
-        width: 100%;
+  .thumbnail {
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
 
-        img {
-            height: 210px;
-            width: 210px;
-        }
-
-        a {
-            float: left;
-            height: 250px;
-            position: relative;
-            width: 100%;
-
-            span {
-                display: none;
-                position: absolute;
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                background: rgba(0,0,0,0.6);
-                color: $grey-color-light;
-                padding: 30px;
-                text-align: center;
-
-                h1 {
-                    font-size: 1.2rem;
-                    margin: 0;
-                }
-
-                p {
-                    font-size: 0.8rem;
-                    color: $grey-color-light;
-                }
-            }
-
-            &:hover {
-                span {
-                    display: block;
-                }
-            }
-        }
+    img {
+      height: 210px;
+      width: 210px;
     }
+
+    a {
+      float: left;
+      height: 250px;
+      position: relative;
+      width: 100%;
+
+      span {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: $grey-color-light;
+        padding: 30px;
+        text-align: center;
+
+        h1 {
+          font-size: 1.2rem;
+          margin: 0;
+        }
+
+        p {
+          font-size: 0.8rem;
+          color: $grey-color-light;
+        }
+      }
+
+      &:hover {
+        span {
+          display: block;
+        }
+      }
+    }
+  }
 }
+
+/* Additional styles for slider layout and selected highlights */
+.project-row {
+  margin: 2rem 0;
+
+  .row-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    h4 {
+      margin: 0;
+    }
+
+    .row-controls {
+      button {
+        background: none;
+        border: none;
+        font-size: 1.6rem;
+        cursor: pointer;
+        padding: 4px 8px;
+      }
+    }
+  }
+}
+
+.project-slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.project-card {
+  flex: 0 0 320px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+
+  .card-media {
+    height: 160px;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .placeholder {
+      padding: 1rem;
+    }
+  }
+
+  .card-body {
+    padding: 12px 14px;
+
+    .project-title {
+      margin: 0 0 6px 0;
+      font-size: 1.05rem;
+    }
+
+    .project-summary {
+      margin: 0 0 8px 0;
+      color: #555;
+      font-size: 0.92rem;
+    }
+
+    .project-meta {
+      font-size: 0.85rem;
+      color: #888;
+
+      .tag {
+        background: #eee;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.selected-pubs {
+  background: #fffbe6; /* soft yellow */
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  .highlight {
+    background: linear-gradient(90deg, rgba(255, 250, 200, 0.6), rgba(255, 250, 200, 0.2));
+    padding: 4px 6px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    display: block;
+  }
+}
+
+.selected-pubs .pub-note {
+  margin: 0 0 8px 0;
+  font-size: 0.85rem;
+  color: #5a4b00;
+}
+
+@media (max-width: 720px) {
+  .project-card {
+    flex: 0 0 260px;
+  }
+}
+// Projects styles (cleaned up formatting)
+
+.project {
+  box-sizing: border-box;
+  float: left;
+  height: 250px;
+  padding: 10px;
+  vertical-align: middle;
+  width: 33.33%;
+
+  .thumbnail {
+    overflow: hidden;
+    height: 200px;
+    width: 100%;
+
+    img {
+      height: 210px;
+      width: 210px;
+    }
+
+    a {
+      float: left;
+      height: 250px;
+      position: relative;
+      width: 100%;
+
+      span {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.6);
+        color: $grey-color-light;
+        padding: 30px;
+        text-align: center;
+
+        h1 {
+          font-size: 1.2rem;
+          margin: 0;
+        }
+
+        p {
+          font-size: 0.8rem;
+          color: $grey-color-light;
+        }
+      }
+
+      &:hover {
+        span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+/* Additional styles for slider layout and selected highlights */
+.project-row {
+  margin: 2rem 0;
+
+  .row-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    h4 {
+      margin: 0;
+    }
+
+    .row-controls {
+      button {
+        background: none;
+        border: none;
+        font-size: 1.6rem;
+        cursor: pointer;
+        padding: 4px 8px;
+      }
+    }
+  }
+}
+
+.project-slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+
+.project-card {
+  flex: 0 0 320px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+
+  scroll-snap-align: start;
+
+  .card-media {
+    height: 160px;
+    background: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .placeholder {
+      padding: 1rem;
+    }
+  }
+
+  .card-body {
+    padding: 12px 14px;
+
+    .project-title {
+      margin: 0 0 6px 0;
+      font-size: 1.05rem;
+    }
+
+    .project-summary {
+      margin: 0 0 8px 0;
+      color: #555;
+      font-size: 0.92rem;
+    }
+
+    .project-meta {
+      font-size: 0.85rem;
+      color: #888;
+
+      .tag {
+        background: #eee;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.selected-pubs {
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+
+  ul {
+    margin: 0;
+    padding-left: 1rem;
+  }
+
+  .highlight {
+    background: linear-gradient(90deg, rgba(255, 250, 200, 0.6), rgba(255, 250, 200, 0.2));
+    padding: 4px 6px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    display: block;
+  }
+}
+
+@media (max-width: 720px) {
+  .project-card {
+    flex: 0 0 260px;
+  }
+}
+

@@ -23,6 +23,7 @@ repo: http://github.com/seokju-lee
 github_username: seokju-lee # put your github username
 scholar_authorid: hS-jTNkAAAAJ # put your google scholar author id
 contact_note: #  You can even add a little note about which of these is the best way to reach you.
+linkedin_username: seokju-lee-33077b250
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -58,7 +59,7 @@ collections:
     output: true
     permalink: /news/:path/
   projects:
-    output: false
+    output: true
     permalink: /projects/:path/
 
 news_limit: 5
@@ -77,7 +78,7 @@ include: ['_pages']
 # plugins
 plugins:
     - jekyll-paginate
-    - jekyll-scholar
+  # - jekyll-scholar
     - jemoji
 
 # Jekyll-Scholar
@@ -96,8 +97,9 @@ scholar:
   bibliography: papers.bib
   bibliography_template: bib
 
-  replace_strings: true
-  join_strings: true
+  replace_strings: false
+  join_strings: false
+
 
   details_dir: bibliography
   details_layout: bibtex.html
