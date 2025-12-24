@@ -4,7 +4,7 @@ title: Interworking control for a Lower Limb Exoskeleton
 description: Position-based knee-hip interworking control for a lower limb exoskeleton in lifting assistance
 date: 2024-12-31
 img: /assets/img/projects/exo/exo_project.jpg
-tags: [Exoskeleton]
+tags: [Robot Control & Simulators]
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
 ---
 

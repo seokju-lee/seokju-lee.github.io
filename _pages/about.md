@@ -35,6 +35,13 @@ If you have any questions or would like to discuss ideas, feel free to reach out
 </section>
 
 
+
+---
+
+<br>
+
+<div id="nav-publications"></div>
+
 {: #publications}
 ## __publications__
 
@@ -46,24 +53,15 @@ If you have any questions or would like to discuss ideas, feel free to reach out
 ---
 
 <!-- explicit anchor to ensure reliable scrolling from other pages -->
-<div id="projects-anchor"></div>
+<div style="clear:both;"></div>
+<div id="nav-projects"></div>
 
 {: #projects}
 ## __projects__
 
 <!-- Projects shown by tag; horizontal sliders per category -->
 {% comment %} Build unique tag list from projects collection {% endcomment %}
-{% assign all_tags = "" %}
-{% for p in site.projects %}
-  {% if p.tags %}
-    {% for t in p.tags %}
-      {% unless all_tags contains t %}
-        {% assign all_tags = all_tags | append: t | append: "," %}
-      {% endunless %}
-    {% endfor %}
-  {% endif %}
-{% endfor %}
-{% assign tag_list = all_tags | split: "," | uniq %}
+{% assign tag_list = "Legged robotics,Autonomous & Mobile Robots,Robot Control & Simulators" | split: "," %}
 
 {% for tag in tag_list %}
   {% if tag != "" %}

@@ -22,7 +22,7 @@ $(function() {
         var currentPath = window.location.pathname.replace(/\/$/, '') || '/';
 
         // If the link points to the site root ("/"), treat it as 'scroll to top' when already on homepage
-        if ((parser.pathname === homePath || href === homePath) && currentPath === homePath) {
+        if ((parser.pathname === homePath || href === homePath) && currentPath === homePath && hashIndex === -1) {
             e.preventDefault();
             var headerOffset = 0; // go fully to top
             $('html, body').animate({ scrollTop: 0 - headerOffset }, 350);

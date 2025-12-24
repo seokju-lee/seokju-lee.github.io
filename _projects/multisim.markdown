@@ -4,7 +4,7 @@ title: Simulator for Multi Agent
 description: An example project entry to demonstrate how to add new projects.
 date: 2025-12-24
 img: /assets/img/projects/multisim/multisim.png
-tags: [Simulator]
+tags: [Robot Control & Simulators]
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
 ---
 

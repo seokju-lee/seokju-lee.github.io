@@ -4,7 +4,7 @@ title: Vision-Based Autonomous Humanoid Control
 description: An example project entry to demonstrate how to add new projects.
 date: 2026-3-1
 img: /assets/img/projects/sample/sample-thumb.jpg
-tags: [Legged robots]
+tags: [Legged robotics]
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
 ---
 

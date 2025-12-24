@@ -4,7 +4,7 @@ title: Learning Blind Humanoid Locomotion
 description: Learning humanoid locomotion in complex terrain using disentangled world model learning.
 date: 2025-9-24
 img: /assets/img/projects/humanoid/humanoid.png
-tags: [Legged robots]
+tags: [Legged robotics]
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
 ---
 
