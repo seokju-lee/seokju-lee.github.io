@@ -8,30 +8,36 @@ tags: [Autonomous & Mobile Robots]
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
 ---
 
-*Duration:* 2023 - 2025
+*Duration:* 2023.08 - 2025.12
 
-*Contributors:* Seokju Lee
+***
 
-This is a sample project page created to show how a project entry should look.
+### Project Overview
 
-## How to add a new project
+This project aims to develop a **super-efficient autonomous flying robot** capable of long-endurance surveillance missions. By mimicking the flight mechanics of large birds (such as eagles or albatrosses), the robot utilizes a combination of gliding and flapping to maximize energy efficiency.
 
-1. Create a new file under `_projects/` named `NN_project-name.markdown`.
-2. Include front-matter fields: `title`, `date`, `img` (or `thumbnail`), `tags`, `summary`.
-3. Put images under `assets/img/projects/<projectname>/` and reference them in `img`.
-4. The project card on the main page will automatically pick up `tags` and show the project in that category slider.
+<div class="project-figure" style="max-width: 60%;">
+    <img src="/assets/img/projects/mirae/mirae.png" alt="Drone Concept">
+    <span class="caption">Fig 1. Concept art of the bio-inspired autonomous flying robot</span>
+</div>
 
-Example front-matter:
+### Key Technologies
 
-```
----
-layout: page
-title: "My New Project"
-date: 2025-01-01
-img: /assets/img/projects/myproject/thumb.png
-tags: [robotics, vision]
-summary: "A short summary shown on the project card."
----
-```
+To achieve ultra-high efficiency and extended flight times, this research integrates two core technologies:
 
-Add detailed content (images, results, links) below.
+1. **Structural Battery Technology:**
+    * Unlike traditional drones where batteries are dead weight, this project utilizes **structural batteries** that function as both the power source and the load-bearing structure (fuselage and wings).
+    * This integration significantly improves energy density and reduces overall weight.
+
+2. **Biomimetic Flight Control:**
+    * **Learning-based Control:** We utilize Reinforcement Learning (specifically PPO) to train flight policies that adapt to changing wind conditions.
+    * **Soaring Strategies:** The control algorithm is designed to exploit thermal updrafts and wind gradients, allowing the robot to glide for extended periods without consuming battery power, similar to how birds fly.
+
+### Research Goals
+
+* Design and fabrication of a prototype using structural battery composite materials.
+* Development of a navigation algorithm for autonomous thermal soaring.
+* Demonstration of stable locomotion and surveillance capabilities in outdoor environments.
+
+### Acknowledgement
+This work was supported by Agency for Defense Development (ADD) - Grant funded by Defense Acquisition Program Administration (DAPA) in 2020 (UD230004TD).

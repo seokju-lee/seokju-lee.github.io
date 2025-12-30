@@ -2,36 +2,43 @@
 layout: page
 title: AI-Based Training Simulation Environment
 description: Development AI agents for UGVs and drones using risk map-based planning an learning for a training simulator.
-date: 2026-1-1
+date: 2025-12-30
 img: /assets/img/projects/morai/morai.png
 tags: [Robot Control & Simulators]
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
 ---
 
-*Duration:* 2024 - present
+*Duration:* 2026.01 - present
 
-*Contributors:* Seokju Lee
+***
 
-This is a sample project page created to show how a project entry should look.
+### Project Overview
 
-## How to add a new project
+This project focuses on developing intelligent maneuvering agents for Unmanned Ground Vehicles (UGVs) and Unmanned Aerial Vehicles (UAVs) within a virtual training simulator (MORAI SIM). The goal is to create a realistic training environment where autonomous systems can perform tactical maneuvers in complex terrains.
 
-1. Create a new file under `_projects/` named `NN_project-name.markdown`.
-2. Include front-matter fields: `title`, `date`, `img` (or `thumbnail`), `tags`, `summary`.
-3. Put images under `assets/img/projects/<projectname>/` and reference them in `img`.
-4. The project card on the main page will automatically pick up `tags` and show the project in that category slider.
+<div class="project-figure" style="max-width: 80%;">
+    <img src="/assets/img/projects/morai/morai.png" alt="Simulation Environment">
+    <span class="caption">Fig 1. Simulation environment featuring UGV and UAV agents</span>
+</div>
 
-Example front-matter:
+### Key Methodologies
 
-```
----
-layout: page
-title: "My New Project"
-date: 2025-01-01
-img: /assets/img/projects/myproject/thumb.png
-tags: [robotics, vision]
-summary: "A short summary shown on the project card."
----
-```
+The project implements distinct control strategies for the ground and aerial agents to maximize their operational efficiency.
 
-Add detailed content (images, results, links) below.
+#### 1. UGV: Risk Map-based Path Planning & Control
+For the UGV, the core strategy involves analyzing the terrain to ensure stable mobility.
+* **Risk Map Construction:** The agent analyzes sensor observation histories to create a "Risk Map" that accounts for terrain features such as slope, roughness, and obstacles.
+* **Path Planning & Tracking:** Based on the generated risk map, the system calculates optimal paths using algorithms like A* and executes precise path tracking using **Model Predictive Control (MPC)**.
+
+#### 2. UAV: RL-based Reconnaissance
+The UAV agent acts as a scout to support the UGV.
+* **Reinforcement Learning:** We utilize Reinforcement Learning (RL) to train the drone's flight policy.
+* **Objective:** The agent learns scanning patterns that maximize area coverage for reconnaissance while simultaneously minimizing exposure to threats and avoiding collisions[cite: 9].
+
+### System Architecture
+
+The AI agents interact with the **MORAI SIM** platform through a dedicated bridge interface[cite: 10]. This architecture allows for real-time exchange of sensor data and control commands, enabling the rigorous testing of autonomous algorithms in a high-fidelity virtual environment[cite: 7, 10].
+
+### Acknowledgement
+
+This work was supported by the 

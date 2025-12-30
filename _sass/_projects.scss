@@ -149,7 +149,8 @@
 }
 
 .selected-pubs {
-  background: #fffbe6; /* soft yellow */
+  background: #fffbe6;
+  /* soft yellow */
   padding: 10px 14px;
   border-radius: 6px;
   margin-bottom: 1rem;
@@ -179,6 +180,7 @@
     flex: 0 0 260px;
   }
 }
+
 // Projects styles (cleaned up formatting)
 
 .project {
@@ -358,3 +360,26 @@
   }
 }
 
+
+// Styles for project content images
+.project-figure {
+  margin: 2rem auto;
+  text-align: center;
+
+  img {
+    display: block;
+    // set specific max-width or width as desired. 
+    // using 100% to fill the column as requested.
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .caption {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+  }
+}

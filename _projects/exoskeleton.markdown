@@ -8,30 +8,36 @@ tags: [Robot Control & Simulators]
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
 ---
 
-*Duration:* 2024 - present
+*Duration:* 2024.01 - 2024.12
 
-*Contributors:* Seokju Lee
+***
 
-This is a sample project page created to show how a project entry should look.
+### Project Overview
 
-## How to add a new project
+This research focuses on enhancing the lifting capabilities of industrial lower-limb exoskeletons. Specifically, it addresses the challenge of providing hip support in exoskeleton systems that are primarily actuated at the knee but have passive or under-actuated hip joints.
 
-1. Create a new file under `_projects/` named `NN_project-name.markdown`.
-2. Include front-matter fields: `title`, `date`, `img` (or `thumbnail`), `tags`, `summary`.
-3. Put images under `assets/img/projects/<projectname>/` and reference them in `img`.
-4. The project card on the main page will automatically pick up `tags` and show the project in that category slider.
+The project proposes a **Position-based Knee-Hip Interworking Control** strategy that leverages the natural kinematic coupling between the knee and hip joints during squat lifting motions.
 
-Example front-matter:
+<div class="project-figure" style="max-width: 60%;">
+    <img src="/assets/img/projects/exo/exo_project.jpg" alt="Exoskeleton System">
+    <span class="caption">Fig 1. Exoskeleton System</span>
+</div>
 
-```
----
-layout: page
-title: "My New Project"
-date: 2025-01-01
-img: /assets/img/projects/myproject/thumb.png
-tags: [robotics, vision]
-summary: "A short summary shown on the project card."
----
-```
+### Key Research & Methodology
 
-Add detailed content (images, results, links) below.
+#### 1. Kinematic Correlation Analysis
+We analyzed human motion data during lifting tasks to establish a linear correlation between knee extension and hip extension. This correlation serves as the foundation for predicting the necessary hip support based on knee motion.
+
+#### 2. Interworking Control Strategy
+Instead of adding heavy actuators to the hip, this project utilizes the actuators at the knee to indirectly support the hip joint.
+* **Concept:** By controlling the knee joint based on the desired hip-knee relationship, the system manipulates the Ground Reaction Force (GRF) vector.
+* **Mechanism:** The controller generates an assistive torque at the knee that creates a moment arm effective enough to reduce the load on the user's lower back (lumbar spine) during the lifting phase.
+
+#### 3. Verification
+<div class="project-figure" style="max-width: 60%;">
+    <img src="/assets/img/projects/exo/experiment.jpg" alt="Experiment Setup">
+    <span class="caption">Fig 2. Experiment Setup</span>
+</div>
+The effectiveness of the proposed control method was verified through surface Electromyography (sEMG) analysis.
+* **Experiments:** Subjects performed lifting tasks with and without the proposed control.
+* **Results:** The system demonstrated a reduction in muscle activity in key muscle groups, particularly the *Erector Spinae* and *Gluteus Maximus*, confirming that the knee actuation successfully compensated for the lack of active hip torque.

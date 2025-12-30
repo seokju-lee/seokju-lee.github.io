@@ -14,7 +14,7 @@ social: true
 years: [2025, 2023, 2022]
 ---
 
-I am currently a PhD student at [KAIST](https://www.kaist.ac.kr/en/), advised by Prof. [Kyung-Soo Kim](http://msc.kaist.ac.kr/).
+I am currently a Ph.D. student at [KAIST](https://www.kaist.ac.kr/en/), advised by Prof. [Kyung-Soo Kim](http://msc.kaist.ac.kr/).
 
 My research focuses on control and state estimation for legged robots, particularly on developing agile and dynamic motions for quadruped robots and humanoids. I'm also interested in reinforcement learning frameworks to enable robots to reason about their body dynamics and interactions with complex environments, ultimately achieving more adaptive and versatile behaviors.
 
@@ -70,7 +70,8 @@ If you have any questions or would like to discuss ideas, feel free to reach out
       <h4>{{ tag | capitalize }}</h4>
     </div>
     <div class="project-slider" data-tag="{{ tag }}">
-      {% for p in site.projects %}
+      {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
+      {% for p in sorted_projects %}
         {% if p.tags and p.tags contains tag %}
           {% include project-card.html project=p %}
         {% endif %}
