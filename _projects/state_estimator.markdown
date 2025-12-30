@@ -64,7 +64,7 @@ We proposed a novel state estimation framework, the **Invariant Neural-Augmented
 Following the previous research (InNKF), this study focuses on enhancing the performance of the state error estimation by improving the neural network architecture.
 
 * **Problem:** While the previous methods (like TCN or GRU-based InNKF) effectively estimated state errors, they treated the temporal sequence of sensor data with a fixed inductive bias. This limited their ability to selectively focus on critical asynchronous events—such as the exact moment of slip onset or impact—within the observation window.
-* **Solution:** We proposed the **Attention-Based Neural Augmented Kalman Filter (Atten-NKF)**, integrating a **Self-Attention** mechanism.
+* **Solution:** We proposed the **Attention-Based Neural Augmented Kalman Filter (AttenNKF)**, integrating a **Self-Attention** mechanism.
     * **Posterior State Error Estimation:** Similar to the InNKF, the network's goal is to explicitly estimate the **posterior estimation error** (the residual error remaining in the state after the Kalman update) caused by unmodeled dynamics like foot slippage.
     * **Attention Mechanism:** Unlike RNNs or CNNs, the attention mechanism analyzes the global dependencies in the sensor history. It allows the network to dynamically assign higher weights to significant time steps (e.g., slip occurrences), enabling more accurate error prediction.
 * **Performance:** The attention mechanism significantly improved the accuracy of the state error estimation compared to TCN/GRU-based baselines, leading to robust localization on challenging terrains with frequent contact failures.
