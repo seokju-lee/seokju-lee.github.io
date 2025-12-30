@@ -4,6 +4,7 @@ title: Legged Robot State Estimation
 description: State estimation for legged robots using hybrid Kalman filter.
 date: 2025-12-30
 img: /assets/img/projects/state_estimator/attennkf.png
+duration: "2024.03 - 2025.10"
 tags: [State Estimation, Quadruped Robot, Supervised Learning]
 category: Legged robotics
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."

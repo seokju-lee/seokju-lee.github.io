@@ -4,6 +4,7 @@ title: Simulator for Multi Agent
 description: A simulation environment for benchmarking path planning algorithms and sensor performance for multi-agent systems.
 date: 2025-11-30
 img: /assets/img/projects/multisim/multisim.png
+duration: "2025.06 - 2025.11"
 category: Robot Control & Simulators
 tags: [Isaac Sim, ROS2, Path Planning]
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."

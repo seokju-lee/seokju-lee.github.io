@@ -4,6 +4,7 @@ title: Control 6-dof Robot Manipulator
 description: Modeling and Kinematic Control of a 6-DOF Robot Manipulator
 date: 2021-12-31
 img: /assets/img/projects/manipulator/manipulator.png
+duration: "2021.09 - 2021.12"
 category: Robot Control & Simulators
 tags: [MATLAB, Simulink, Kinematics]
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."

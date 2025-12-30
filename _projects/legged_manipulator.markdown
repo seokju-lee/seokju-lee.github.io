@@ -4,6 +4,7 @@ title: Learning Legged Mobile Manipulator
 description: Reinforcement learning for control a legged mobile manipulator.
 date: 2022-12-31
 img: /assets/img/projects/legged_manipulator/legged_manipulator.png
+duration: "2022.06 - 2022.12"
 tags: [Raisim, Quadruped Robot, Reinforcement Learning]
 category: Legged robotics
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."

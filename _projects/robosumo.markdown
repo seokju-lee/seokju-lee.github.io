@@ -4,6 +4,7 @@ title: Learning RoboSumo for quadruped robots
 description: Self-play reinforcement learning for RoboSumo.
 date: 2023-12-31
 img: /assets/img/projects/robosumo/snapshot_1.png
+duration: "2023.09 - 2023.12"
 tags: [Raisim, Quadruped Robot, Reinforcement Learning, Self-Playing]
 category: Legged robotics
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."

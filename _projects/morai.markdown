@@ -4,6 +4,7 @@ title: AI-Based Training Simulation Environment
 description: Development AI agents for UGVs and drones using risk map-based planning an learning for a training simulator.
 date: 2025-12-30
 img: /assets/img/projects/morai/morai.png
+duration: "2026.01 - present"
 category: Robot Control & Simulators
 tags: [MORAI SIM, Multi-Agent Reinforcement Learning, Path Planning]
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
