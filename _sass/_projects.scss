@@ -383,3 +383,13 @@
     font-style: italic;
   }
 }
+
+// Mobile optimization for project figures
+@media (max-width: 768px) {
+  .project-figure {
+    // Override inline styles on mobile to maximize space
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 1.5rem 0; // Slightly reduce vertical margin
+  }
+}
