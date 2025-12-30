@@ -4,7 +4,8 @@ title: Autonomous Flying Robot based on Structural Battery
 description: Development an ultra-high-efficiency autonomous surveillance drone inspired by bird flight and enabled by structural battery technology.
 date: 2025-12-24
 img: /assets/img/projects/mirae/mirae.png
-tags: [Autonomous & Mobile Robots]
+tags: [Reinforcement Learning, Drone, Pixhawk]
+category: Autonomous & Mobile Robots
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
 ---
 

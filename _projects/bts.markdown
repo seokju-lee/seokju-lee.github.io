@@ -4,7 +4,8 @@ title: Development of Self-Driving Technology
 description: Using RTAB-Map and SLAM for autonomous navigation of a unmanned ground vehicle for non face-to-face delivery services.
 date: 2022-12-31
 img: /assets/img/projects/bts/bts.png
-tags: [Autonomous & Mobile Robots]
+tags: [ROS, SLAM, Computer Vision]
+category: Autonomous & Mobile Robots
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
 ---
 

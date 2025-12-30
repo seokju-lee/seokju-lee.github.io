@@ -4,7 +4,8 @@ title: Learning Blind Humanoid Locomotion
 description: Learning humanoid locomotion in complex terrain using disentangled world model learning.
 date: 2025-09-24
 img: /assets/img/projects/humanoid/humanoid.png
-tags: [Legged robotics]
+tags: [Isaac Gym, Humanoid, Supervised Learning, Reinforcement Learning]
+category: Legged robotics
 summary: "Learning humanoid locomotion in complex terrain using disentangled world model learning."
 ---
 

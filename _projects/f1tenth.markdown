@@ -4,7 +4,8 @@ title: F1Tenth Autonomous Racing
 description: SLAM and pure pursuit control for F1Tenth racing.
 date: 2021-12-31
 img: /assets/img/projects/f1tenth/f1tenth.png
-tags: [Autonomous & Mobile Robots]
+tags: [ROS, SLAM, Path Planning, Path Tracking]
+category: Autonomous & Mobile Robots
 summary: "This is a short one-line summary. Add a thumbnail at `assets/img/projects/<project>/...` and edit front-matter."
 ---
 

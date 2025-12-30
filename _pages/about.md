@@ -72,7 +72,9 @@ If you have any questions or would like to discuss ideas, feel free to reach out
     <div class="project-slider" data-tag="{{ tag }}">
       {% assign sorted_projects = site.projects | sort: 'date' | reverse %}
       {% for p in sorted_projects %}
-        {% if p.tags and p.tags contains tag %}
+        {% if p.category == tag %}
+          {% include project-card.html project=p %}
+        {% elsif p.category == nil and p.tags contains tag %}
           {% include project-card.html project=p %}
         {% endif %}
       {% endfor %}
