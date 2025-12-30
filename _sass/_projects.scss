@@ -391,5 +391,13 @@
     max-width: 100% !important;
     width: 100% !important;
     margin: 1.5rem 0; // Slightly reduce vertical margin
+
+    // Ensure embedded videos/iframes fit the width and maintain aspect ratio
+    iframe,
+    video {
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9;
+    }
   }
 }
