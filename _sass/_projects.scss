@@ -149,7 +149,8 @@
 }
 
 .selected-pubs {
-  background: #fffbe6; /* soft yellow */
+  background: #fffbe6;
+  /* soft yellow */
   padding: 10px 14px;
   border-radius: 6px;
   margin-bottom: 1rem;
@@ -179,6 +180,7 @@
     flex: 0 0 260px;
   }
 }
+
 // Projects styles (cleaned up formatting)
 
 .project {
@@ -357,4 +359,3 @@
     flex: 0 0 260px;
   }
 }
-
