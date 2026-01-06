@@ -181,6 +181,18 @@
   }
 }
 
+/* Ensure project sliders adapt and don't overflow on various screens */
+.project-slider {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.project-card img, .project-figure img {
+  max-width: 100%;
+  height: auto;
+}
+
 // Projects styles (cleaned up formatting)
 
 .project {
