@@ -44,20 +44,9 @@ $(function() {
 
             var samePath = (parser2.pathname === window.location.pathname && parser2.hostname === window.location.hostname);
             if (!samePath) {
-                // If navigating to another page (e.g. from a post/news page to the homepage),
-                // set a sessionStorage flag so the homepage can scroll to the desired anchor
-                // after layout/images/fonts finish loading. This avoids race conditions.
-                try {
-                    if (hash === '#projects' || hash === '#projects-anchor') {
-                        sessionStorage.setItem('scrollToOnLoad', 'projects-anchor');
-                    } else if (hash) {
-                        sessionStorage.setItem('scrollToOnLoad', hash);
-                    }
-                } catch (err) {
-                    // ignore storage errors (private mode etc.)
-                }
-                // navigate to the normalized anchor on the root if desired
-                if (hash === '#projects' || hash === '#projects-anchor') {
+                // navigate to other page (which may be the homepage) so the page-load handler can handle the hash
+                // but if we normalized the hash, navigate to the anchor we prefer
+                if (hash === '#projects-anchor') {
                     window.location = parser.protocol + '//' + parser.host + '/#projects-anchor';
                 } else {
                     window.location = href;
@@ -147,19 +136,6 @@ document.addEventListener('DOMContentLoaded', function() {
 window.addEventListener('load', function() {
     if (window.location.hash) {
         scrollToHashWithRetries(window.location.hash, 8, 200, 2000);
-    }
-    // If a navigation set a scroll flag (sessionStorage), honor it after full load
-    try {
-        var s = sessionStorage.getItem('scrollToOnLoad');
-        if (s) {
-            // normalize and scroll
-            if (s === 'projects-anchor') s = '#projects-anchor';
-            if (s.charAt(0) !== '#') s = '#' + s;
-            scrollToHashWithRetries(s, 12, 150, 2500);
-            sessionStorage.removeItem('scrollToOnLoad');
-        }
-    } catch (err) {
-        // ignore
     }
 });
 

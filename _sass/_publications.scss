@@ -9,7 +9,6 @@
         text-align: center;
     }
 }
-
 .year {
     border-top: 1px solid $light-gray;
     color: $light-gray;
@@ -17,7 +16,6 @@
     padding-top: 1ex;
     text-align: right;
 }
-
 .bibliography {
     margin-bottom: 50px;
     margin-top: 20px;
@@ -39,14 +37,12 @@
             line-height: 1.4em;
             margin: 10px;
         }
-
         pre {
             font-size: 1em;
             line-height: 1.4em;
             padding: 10px;
         }
     }
-
     .hidden.open {
         max-height: 100em;
         -webkit-transition: 0.15s ease;
@@ -60,42 +56,22 @@
         margin: 10px 0;
         position: relative;
 
-        span {
-            display: block;
-        }
-
-        .title {
-            font-weight: bolder;
-        }
-
+        span { display: block; }
+        .title { font-weight: bolder; }
         .author {
-
-            strong,
-            b {
-                font-weight: bold;
-                color: #000; // Optional: ensure it's black for better contrast
-            }
-
             a {
                 border-bottom: 1px dashed $theme-color;
-
                 &:hover {
                     border-bottom-style: solid;
                     text-decoration: none;
                 }
             }
-
-            >em {
+            > em {
                 border-bottom: 1px solid;
                 font-style: normal;
             }
         }
-
-        a.abstract,
-        a.bibtex {
-            cursor: pointer;
-        }
-
+        a.abstract, a.bibtex { cursor: pointer; }
         .hidden {
             font-size: $small-font-size;
             max-height: 0px;
@@ -111,14 +87,12 @@
                 line-height: 1.4em;
                 margin: 10px;
             }
-
             pre {
                 font-size: 1em;
                 line-height: 1.4em;
                 padding: 10px;
             }
         }
-
         .hidden.open {
             max-height: 100em;
             -webkit-transition: 0.15s ease;
@@ -127,39 +101,42 @@
             -o-transition: 0.15s ease;
             transition: all 0.15s ease;
         }
-
         span.abstract.hidden {
             border: dashed 1px $background-color;
         }
-
         span.abstract.hidden.open {
             border-color: $grey-color;
         }
     }
-
     abbr {
         position: absolute;
-        left: -7em;
+            left: -7em;
     }
-}
-
+ }
 .star {
     color: $theme-color;
     font-style: normal;
 }
 
-/* Ensure author strong/b elements in bibliography are always bold and readable
-   Use high-specificity and !important to override any global resets that
-   may reduce font-weight on some viewports. */
-.bibliography .author strong,
-.bibliography .author b,
-.bibliography .author > strong {
-    font-weight: 700 !important;
-    color: #000 !important;
+/* Highlight for selected/representative publications */
+.bibliography {
+    .yellow-box {
+        background: #fff9d6; /* pale yellow */
+        border-left: 4px solid #f2d04a;
+        padding: 12px 14px;
+        margin-bottom: 12px;
+        border-radius: 6px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    }
+
+    /* Ensure columns inside highlighted boxes align nicely */
+    .col.bibone { margin-right: 12px; }
+    .col.bibtwo { overflow: visible; }
 }
 
-/* Inline helper to color the literal word 'yellow' in the explanatory sentence */
-.inline-yellow {
-    color: #FAFF6E; /* readable yellow */
-    font-weight: 700;
+/* Small descriptive note under the publications header */
+.publications p.subnote {
+    font-size: 0.9em;
+    color: #6b6b6b;
+    margin-top: 0.15rem;
 }
