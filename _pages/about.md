@@ -14,7 +14,7 @@ social: true
 years: [2025, 2023, 2022]
 ---
 
-I am currently a PhD student in [Mechatronics, Systems and Control Lab (MSC Lab)](https://msc.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), advised by Prof. [Kyung-Soo Kim](http://msc.kaist.ac.kr/).
+I am currently a Ph.D. student in [Mechatronics, Systems and Control Lab (MSC Lab)](https://msc.kaist.ac.kr/) at [KAIST](https://www.kaist.ac.kr/en/), advised by Prof. [Kyung-Soo Kim](http://msc.kaist.ac.kr/).
 
 My research focuses on control and state estimation for legged robots, particularly on developing agile and dynamic motions for quadruped robots and humanoids. I'm also interested in reinforcement learning frameworks to enable robots to reason about their body dynamics and interactions with complex environments, ultimately achieving more adaptive and versatile behaviors.
 
