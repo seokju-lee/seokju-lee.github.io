@@ -117,17 +117,3 @@
     color: $theme-color;
     font-style: normal;
 }
-
-/* Inline yellow box used to highlight a single word like 'yellow' */
-.inline-yellow-box {
-    display: inline-block;
-    /* use requested soft yellow rgba value */
-    background: rgba(250, 255, 110, 0.467);
-    /* inherit surrounding sentence color (so it matches the preceding note) */
-    color: inherit;
-    padding: 0.08em 0.36em;
-    margin: 0 0.12em;
-    border-radius: 3px;
-    line-height: 1;
-    vertical-align: baseline;
-}

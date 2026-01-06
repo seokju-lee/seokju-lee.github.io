@@ -32,26 +32,39 @@ sup {
     top: -0.9ex;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $heading-font-family;
     font-weight: $heading-font-weight;
     line-height: $heading-line-height;
 }
 
 /* make strong and bold text clearly visible across devices */
-strong, b {
-    font-weight: 600;
+strong,
+b {
+    font-weight: 700;
 }
 
 /* Responsive adjustments: ensure images, iframes scale and avoid layout breakage */
-img, iframe, embed, object, video {
+img,
+iframe,
+embed,
+object,
+video {
     max-width: 100%;
     height: auto;
 }
 
 /* Improve legibility on small screens: slightly reduce heavy heading weight if necessary */
 @media (max-width: 600px) {
-    h1, h2, h3 {
+
+    h1,
+    h2,
+    h3 {
         font-weight: 700;
     }
 }

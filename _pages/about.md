@@ -34,11 +34,12 @@ If you have any questions or would like to discuss ideas, feel free to reach out
   </div>
 </section>
 
+---
 
-{: #publications}
+{: #nav-publications}
 ## __publications__
 
-<p style="font-size:0.9em;color:#6b6b6b;margin-top:0.15rem;">*representative publications are highlighted in <span class="inline-yellow-box">yellow</span>.</p>
+<p style="font-size:0.9em;color:#6b6b6b;margin-top:0.15rem;">*representative publications are highlighted in <span style="background-color: rgba(250, 255, 110, 0.467); padding: 2px 5px; border-radius: 4px; color: #6b6b6b;">yellow</span>.</p>
 
 {% include publications-static.html %}
 
@@ -48,36 +49,35 @@ If you have any questions or would like to discuss ideas, feel free to reach out
 <!-- explicit anchor to ensure reliable scrolling from other pages -->
 <div id="projects-anchor"></div>
 
-{: #projects}
+{: #nav-projects}
 ## __projects__
 
 <!-- Projects shown by tag; horizontal sliders per category -->
-<!-- Projects shown by category; horizontal sliders per category -->
-{% comment %} Build unique category list from projects collection {% endcomment %}
-{% assign all_cats = "" %}
-{% for p in site.projects %}
-  {% if p.category %}
-    {% unless all_cats contains p.category %}
-      {% assign all_cats = all_cats | append: p.category | append: "," %}
-    {% endunless %}
-  {% endif %}
-{% endfor %}
-{% assign category_list = all_cats | split: "," | uniq %}
+<!-- Projects shown by specific categories -->
+{% assign category_list = "Legged robotics,Autonomous & Mobile Robots,Robot Control & Simulators" | split: "," %}
 
-{% for cat in category_list %}
-  {% if cat != "" %}
+{% for category in category_list %}
   <section class="project-row">
     <div class="row-header">
-      <h4>{{ cat }}</h4>
+      <h4>{{ category }}</h4>
     </div>
-    <div class="project-slider" data-category="{{ cat }}">
-      {% for p in site.projects %}
-        {% if p.category == cat %}
+    <div class="project-slider" data-tag="{{ category }}">
+      {% assign sorted_projects = site.projects | sort: 'duration' | reverse %}
+      
+      <!-- First render pinned projects -->
+      {% for p in sorted_projects %}
+        {% if p.category == category and p.pinned == true %}
+          {% include project-card.html project=p %}
+        {% endif %}
+      {% endfor %}
+
+      <!-- Then render remaining projects -->
+      {% for p in sorted_projects %}
+        {% if p.category == category and p.pinned != true %}
           {% include project-card.html project=p %}
         {% endif %}
       {% endfor %}
     </div>
   </section>
-  {% endif %}
 {% endfor %}
 

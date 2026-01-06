@@ -1,12 +1,23 @@
 @charset "UTF-8";
 
-html, body {
+html,
+body {
   height: auto;
   min-height: 100%;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 img {
-  max-width: none;
+  max-width: 100%; // Ensure images never overflow
 }
 
 em img {
@@ -15,17 +26,22 @@ em img {
 }
 
 body {
-          box-sizing: border-box;
-     -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+  // box-sizing is handled globally now
 }
 
 .wrapper {
-    max-width: -webkit-calc(800px - (#{$horizontal-spacing-unit} * 2));
-    max-width:         calc(800px - (#{$horizontal-spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $horizontal-spacing-unit;
-    padding-left: $horizontal-spacing-unit;
-    @extend .clearfix;
+  max-width: 820px;
+  // max-width: calc(800px - (#{$horizontal-spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $horizontal-spacing-unit;
+  padding-left: $horizontal-spacing-unit;
+  @extend .clearfix;
+
+  // Responsive padding for smaller devices
+  @media (max-width: 800px) {
+    padding-right: $space-2; // Reduce from ~50px to ~16px
+    padding-left: $space-2;
+    max-width: 100%; // Utilize full width
+  }
 }
