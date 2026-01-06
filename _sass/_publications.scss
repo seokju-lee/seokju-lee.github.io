@@ -147,3 +147,19 @@
     color: $theme-color;
     font-style: normal;
 }
+
+/* Ensure author strong/b elements in bibliography are always bold and readable
+   Use high-specificity and !important to override any global resets that
+   may reduce font-weight on some viewports. */
+.bibliography .author strong,
+.bibliography .author b,
+.bibliography .author > strong {
+    font-weight: 700 !important;
+    color: #000 !important;
+}
+
+/* Inline helper to color the literal word 'yellow' in the explanatory sentence */
+.inline-yellow {
+    color: #FAFF6E; /* readable yellow */
+    font-weight: 700;
+}

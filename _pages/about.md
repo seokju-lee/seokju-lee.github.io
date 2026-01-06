@@ -45,7 +45,7 @@ If you have any questions or would like to discuss ideas, feel free to reach out
 {: #publications}
 ## __publications__
 
-<p style="font-size:0.9em;color:#6b6b6b;margin-top:0.15rem;">*representative publications are highlighted in yellow.</p>
+<p style="font-size:0.9em;color:#6b6b6b;margin-top:0.15rem;">*representative publications are highlighted in <span class="inline-yellow">yellow</span>.</p>
 
 {% include publications-static.html %}
 
