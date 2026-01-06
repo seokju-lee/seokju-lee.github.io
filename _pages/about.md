@@ -38,7 +38,7 @@ If you have any questions or would like to discuss ideas, feel free to reach out
 {: #publications}
 ## __publications__
 
-<p style="font-size:0.9em;color:#6b6b6b;margin-top:0.15rem;">*representative publications are highlighted in yellow.</p>
+<p style="font-size:0.9em;color:#6b6b6b;margin-top:0.15rem;">*representative publications are highlighted in <span class="inline-yellow-box">yellow</span>.</p>
 
 {% include publications-static.html %}
 
@@ -52,28 +52,27 @@ If you have any questions or would like to discuss ideas, feel free to reach out
 ## __projects__
 
 <!-- Projects shown by tag; horizontal sliders per category -->
-{% comment %} Build unique tag list from projects collection {% endcomment %}
-{% assign all_tags = "" %}
+<!-- Projects shown by category; horizontal sliders per category -->
+{% comment %} Build unique category list from projects collection {% endcomment %}
+{% assign all_cats = "" %}
 {% for p in site.projects %}
-  {% if p.tags %}
-    {% for t in p.tags %}
-      {% unless all_tags contains t %}
-        {% assign all_tags = all_tags | append: t | append: "," %}
-      {% endunless %}
-    {% endfor %}
+  {% if p.category %}
+    {% unless all_cats contains p.category %}
+      {% assign all_cats = all_cats | append: p.category | append: "," %}
+    {% endunless %}
   {% endif %}
 {% endfor %}
-{% assign tag_list = all_tags | split: "," | uniq %}
+{% assign category_list = all_cats | split: "," | uniq %}
 
-{% for tag in tag_list %}
-  {% if tag != "" %}
+{% for cat in category_list %}
+  {% if cat != "" %}
   <section class="project-row">
     <div class="row-header">
-      <h4>{{ tag | capitalize }}</h4>
+      <h4>{{ cat }}</h4>
     </div>
-    <div class="project-slider" data-tag="{{ tag }}">
+    <div class="project-slider" data-category="{{ cat }}">
       {% for p in site.projects %}
-        {% if p.tags and p.tags contains tag %}
+        {% if p.category == cat %}
           {% include project-card.html project=p %}
         {% endif %}
       {% endfor %}

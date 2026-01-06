@@ -118,25 +118,16 @@
     font-style: normal;
 }
 
-/* Highlight for selected/representative publications */
-.bibliography {
-    .yellow-box {
-        background: #fff9d6; /* pale yellow */
-        border-left: 4px solid #f2d04a;
-        padding: 12px 14px;
-        margin-bottom: 12px;
-        border-radius: 6px;
-        box-shadow: 0 1px 2px rgba(0,0,0,0.04);
-    }
-
-    /* Ensure columns inside highlighted boxes align nicely */
-    .col.bibone { margin-right: 12px; }
-    .col.bibtwo { overflow: visible; }
-}
-
-/* Small descriptive note under the publications header */
-.publications p.subnote {
-    font-size: 0.9em;
-    color: #6b6b6b;
-    margin-top: 0.15rem;
+/* Inline yellow box used to highlight a single word like 'yellow' */
+.inline-yellow-box {
+    display: inline-block;
+    /* use requested soft yellow rgba value */
+    background: rgba(250, 255, 110, 0.467);
+    /* inherit surrounding sentence color (so it matches the preceding note) */
+    color: inherit;
+    padding: 0.08em 0.36em;
+    margin: 0 0.12em;
+    border-radius: 3px;
+    line-height: 1;
+    vertical-align: baseline;
 }
