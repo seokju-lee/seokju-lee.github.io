@@ -43,3 +43,7 @@ Instead of adding heavy actuators to the hip, this project utilizes the actuator
 The effectiveness of the proposed control method was verified through surface Electromyography (sEMG) analysis.
 * **Experiments:** Subjects performed lifting tasks with and without the proposed control.
 * **Results:** The system demonstrated a reduction in muscle activity in key muscle groups, particularly the *Erector Spinae* and *Gluteus Maximus*, confirming that the knee actuation successfully compensated for the lack of active hip torque.
+
+### Acknowledgement
+
+This research was financially supported by the Institute of Civil Military Technology Cooperation and funded by the Defense Acquisition Program Administration and Ministry of Trade, Industry and Energy of the Korean government under grant No. 19-CM-GU-01.

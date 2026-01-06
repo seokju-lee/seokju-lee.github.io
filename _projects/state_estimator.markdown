@@ -44,7 +44,7 @@ We proposed a novel state estimation framework, the **Invariant Neural-Augmented
     * **Compensation:** This estimated error is injected back into the filter to correct the posterior state estimate ($\hat{X}_{k}^{+}$), effectively removing drift caused by unmodeled dynamics like slippage.
 * **Result:** The method significantly outperformed standard EKFs and vanilla neural filters by leveraging the geometric structure of the state space to learn a consistent error correction term.
 
-**Publication:**
+**BibTeX:**
 ```bibtex
 @INPROCEEDINGS{lee2025legged,
   author={Lee, Seokju and Kim, Hyun-Bin and Kim, Kyung-Soo},

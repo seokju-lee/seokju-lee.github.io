@@ -41,6 +41,6 @@ The UAV agent acts as a scout to support the UGV.
 
 The AI agents interact with the **MORAI SIM** platform through a dedicated bridge interface[cite: 10]. This architecture allows for real-time exchange of sensor data and control commands, enabling the rigorous testing of autonomous algorithms in a high-fidelity virtual environment[cite: 7, 10].
 
-### Acknowledgement
+<!-- ### Acknowledgement
 
-This work was supported by the 
+This work was supported by the  -->
