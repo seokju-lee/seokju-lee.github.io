@@ -359,3 +359,33 @@
     flex: 0 0 260px;
   }
 }
+
+// Restoring project media size (Desktop & Mobile)
+.project-figure {
+  width: 100%;
+  margin: 2rem auto; // Center alignment
+  display: block;
+  text-align: center; // Center text (including captions)
+
+  iframe,
+  video,
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; // Center images/videos if they somehow aren't full width
+  }
+
+  iframe,
+  video {
+    aspect-ratio: 16 / 9;
+  }
+
+  .caption {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.95em;
+    color: #666;
+    font-weight: normal;
+  }
+}

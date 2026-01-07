@@ -28,11 +28,11 @@ To handle dynamic environments and obstacle avoidance without a global map, I im
 <div style="display: flex; justify-content: space-between;">
     <div style="width: 48%;">
         <p><strong>Wall Following Demo</strong></p>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/PHuN5zQXp-U" title="Wall Following Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="560" src="https://www.youtube.com/embed/PHuN5zQXp-U" title="Wall Following Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="aspect-ratio: 9 / 16;"></iframe>
     </div>
     <div style="width: 48%;">
         <p><strong>Gap Following Demo</strong></p>
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/x7D6f7-DHt0" title="Gap Following Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="560" src="https://www.youtube.com/embed/x7D6f7-DHt0" title="Gap Following Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="aspect-ratio: 9 / 16;"></iframe>
     </div>
 </div>
 
