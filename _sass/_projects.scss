@@ -370,10 +370,10 @@
   iframe,
   video,
   img {
-    width: 100%;
+    width: 100% !important; // Force fill container
     height: auto;
     display: block;
-    margin: 0 auto; // Center images/videos if they somehow aren't full width
+    margin: 0 auto !important; // Force center alignment
   }
 
   iframe,
