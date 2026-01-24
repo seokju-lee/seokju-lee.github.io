@@ -35,11 +35,11 @@ For the UGV, the core strategy involves analyzing the terrain to ensure stable m
 #### 2. UAV: RL-based Reconnaissance
 The UAV agent acts as a scout to support the UGV.
 * **Reinforcement Learning:** We utilize Reinforcement Learning (RL) to train the drone's flight policy.
-* **Objective:** The agent learns scanning patterns that maximize area coverage for reconnaissance while simultaneously minimizing exposure to threats and avoiding collisions[cite: 9].
+* **Objective:** The agent learns scanning patterns that maximize area coverage for reconnaissance while simultaneously minimizing exposure to threats and avoiding collisions.
 
 ### System Architecture
 
-The AI agents interact with the **MORAI SIM** platform through a dedicated bridge interface[cite: 10]. This architecture allows for real-time exchange of sensor data and control commands, enabling the rigorous testing of autonomous algorithms in a high-fidelity virtual environment[cite: 7, 10].
+The AI agents interact with the **MORAI SIM** platform through a dedicated bridge interface. This architecture allows for real-time exchange of sensor data and control commands, enabling the rigorous testing of autonomous algorithms in a high-fidelity virtual environment.
 
 <!-- ### Acknowledgement
 
