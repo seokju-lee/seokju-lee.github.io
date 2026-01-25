@@ -57,10 +57,14 @@ We proposed a novel state estimation framework, the **Invariant Neural-Augmented
   doi={10.1109/IROS60139.2025.11247668}}
 ```
 
-### 2. Attention-Based Neural Augmented Kalman Filter
+### 2. Attention-Based Neural Augmented Kalman Filter (IEEE RA-L)
 
-**Title:** Attention-Based Neural Augmented Kalman Filter for Legged Robot State Estimation
-*(Status: Under Review)*
+**Title:** Attention-Based Neural Augmented Kalman Filter for Legged Robot State Estimation 
+
+<div class="project-figure" style="max-width: 80%;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2XHHigqnQgs" title="State Estimation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <span class="caption">Video 1. AttenNKF Supplementary Video</span>
+</div>
 
 Following the previous research (InNKF), this study focuses on enhancing the performance of the state error estimation by improving the neural network architecture.
 
