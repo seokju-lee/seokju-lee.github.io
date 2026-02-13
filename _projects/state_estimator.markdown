@@ -76,12 +76,17 @@ Following the previous research (InNKF), this study focuses on enhancing the per
 
 **BibTeX:**
 ```bibtex
-@article{lee2026attention,
-  title={Attention-Based Neural-Augmented Kalman Filter for Legged Robot State Estimation},
+@ARTICLE{11393905,
   author={Lee, Seokju and Kim, Kyung-Soo},
-  journal={arXiv preprint arXiv:2601.18569},
-  year={2026}
-}
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Attention-Based Neural-Augmented Kalman Filter for Legged Robot State Estimation}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-8},
+  keywords={Foot;Robot sensing systems;State estimation;Legged locomotion;Kalman filters;Kinematics;History;Noise;Correlation;Neural networks;Legged robots;proprioceptive state estimation;attention mechanisms},
+  doi={10.1109/LRA.2026.3664311}}
+
 ```
 
 ---
