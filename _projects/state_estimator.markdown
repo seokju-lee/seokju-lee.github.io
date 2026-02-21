@@ -81,9 +81,9 @@ Following the previous research (InNKF), this study focuses on enhancing the per
   journal={IEEE Robotics and Automation Letters}, 
   title={Attention-Based Neural-Augmented Kalman Filter for Legged Robot State Estimation}, 
   year={2026},
-  volume={},
-  number={},
-  pages={1-8},
+  volume={11},
+  number={4},
+  pages={4122-4129},
   keywords={Foot;Robot sensing systems;State estimation;Legged locomotion;Kalman filters;Kinematics;History;Noise;Correlation;Neural networks;Legged robots;proprioceptive state estimation;attention mechanisms},
   doi={10.1109/LRA.2026.3664311}}
 
