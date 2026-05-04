@@ -37,7 +37,7 @@ If you have any questions or would like to discuss ideas, feel free to reach out
 ---
 
 {: #nav-publications}
-## __publications__
+## __Publications__
 
 <p style="font-size:0.9em;color:#6b6b6b;margin-top:0.15rem;">*representative publications are highlighted in <span style="background-color: rgba(250, 255, 110, 0.467); padding: 2px 5px; border-radius: 4px; color: #6b6b6b;">yellow</span>.</p>
 
@@ -50,7 +50,7 @@ If you have any questions or would like to discuss ideas, feel free to reach out
 <div id="projects-anchor"></div>
 
 {: #nav-projects}
-## __projects__
+## __Projects__
 
 <!-- Projects shown by tag; horizontal sliders per category -->
 <!-- Projects shown by specific categories -->
@@ -81,8 +81,10 @@ If you have any questions or would like to discuss ideas, feel free to reach out
   </section>
 {% endfor %}
 
+---
+
+## __Professional Services__
 <section class="services-section">
-  <h3>Professional Services</h3>
   <div class="services-grid">
     <div class="service-card">
       <h4>Conference Reviewer</h4>
