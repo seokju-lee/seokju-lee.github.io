@@ -1,7 +1,7 @@
 <!-- Static publications include: reproduces thumbnail + metadata + links -->
 <div class="bibliography clearfix">
 
-    <div id="han2026raytold" class="col three">
+  <div id="han2026raytold" class="col three">
     <div style="clear: both;">
       <div>
         <img class="col bibone first" src="/assets/img/teasers/raytold.gif" alt="raytold teaser">
@@ -19,6 +19,28 @@
 
       <div class="abstract hidden">
         <p>Dense, dynamic crowds pose a persistent challenge for autonomous mobile robots. Purely reactive planning methods, such as Model Predictive Path Integral (MPPI) control, often fail to escape local minima in complex scenarios due to their limited prediction horizon. To bridge this gap, we propose Ray-based Task-Oriented Latent Dynamics (RAY-TOLD), a hybrid control architecture that integrates obstacle information into latent dynamics and utilizes the robustness of physics-based MPPI with the long-horizon foresight of reinforcement learning. RAY-TOLD leverages a LiDAR-centric latent dynamics model to encode high-dimensional sensor data into a compact state representation, enabling the learning of a terminal value function and a policy prior. We introduce a policy mixture sampling strategy that augments the MPPI candidate population with trajectories derived from the learned policy, effectively guiding the planner towards the goal while maintaining kinematic feasibility. Extensive tests in a stochastic environment with high-density dynamic obstacles demonstrate that our method outperforms the MPPI baseline, reducing the collision rate. The results confirm that blending short-horizon physics-based rollouts with learned long-horizon intent significantly enhances navigation reliability and safety.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="bangunharcana2026grpo" class="col three">
+    <div style="clear: both;">
+      <div>
+        <img class="col bibone first" src="/assets/img/teasers/grpo.png" alt="grpo teaser">
+      </div>
+    </div>
+    <div class="col bibtwo last">
+      <div class="title">Bridging Reactive Simulation and Log-Playback for Safer Autonomous Driving with GRPO</div>
+      <div class="author">Antyanta Bangunharcana, <strong>Seokju Lee</strong>, Seungho Han</div>
+      <div class="periodical"><em>Under Review</em></div>
+
+      <div class="links">
+        [<a class="abstract">Abs</a>]
+        <!-- [<a href="https://arxiv.org/abs/2604.27450" target="_blank">arXiv</a>] -->
+      </div>
+
+      <div class="abstract hidden">
+        <p>Reinforcement learning (RL) in learned world models has recently enabled high-performing closed-loop planners for autonomous driving. However, these policies often exploit optimistic assumptions in the simulator: background agents are typically reactive and cooperative, while real traffic contains many non-reactive or adversarial drivers. This mismatch may lead to behaviors where the ego vehicle is not as safe around non-reactive agents. In this work, we build on the Plan-R1 framework and propose a training curriculum that explicitly mixtures reactive world-model agents with non-reactive log-playback trajectories to mitigate cooperative bias. First, we introduce Mixed-Reactivity Rollouts, which stochastically combine simulated and log-playback agents within the same scenario to expose the policy to a spectrum of interaction patterns while providing truth anchors that stabilize the world model. Second, we propose Identity Consistency, a variance-reduction technique for Group Relative Policy Optimization (GRPO) that keeps background agents and environment randomness fixed within each rollout group so that the advantage signal reflects policy changes rather than simulator noise. On the nuPlan benchmark, our curriculum reduces collision rates in non-reactive evaluation settings while maintaining competitive overall driving scores, demonstrating improved robustness to uncooperative agents.</p>
       </div>
     </div>
   </div>
