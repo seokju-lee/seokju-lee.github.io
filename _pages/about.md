@@ -6,7 +6,7 @@ description: Graduate Student | KAIST | MSC Lab
 
 profile:
   align: right
-  image: image.jpg
+  image: profile.jpg
   address: #mention address
 
 news: true
