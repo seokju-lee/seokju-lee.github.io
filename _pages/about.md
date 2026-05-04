@@ -81,3 +81,25 @@ If you have any questions or would like to discuss ideas, feel free to reach out
   </section>
 {% endfor %}
 
+<section class="services-section">
+  <h3>Professional Services</h3>
+  <div class="services-grid">
+    <div class="service-card">
+      <h4>Conference Reviewer</h4>
+      <ul>
+        <li>IEEE International Conference on Robotics and Automation (ICRA)</li>
+        <li>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <h4>Journal Reviewer</h4>
+      <ul>
+        <li>IEEE Transactions on Robotics (T-RO)</li>
+        <li>Pattern Recognition</li>
+        <li>Neurocomputing</li>
+        <li>Measurement</li>
+        <li>Artificial Intelligence Review</li>
+      </ul>
+    </div>
+  </div>
+</section>
