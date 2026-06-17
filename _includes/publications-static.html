@@ -1,98 +1,42 @@
 <!-- Static publications include: reproduces thumbnail + metadata + links -->
+<style>
+  .bibliography .publication-section {
+    background: transparent !important;
+    clear: both;
+    margin: 1.2rem 0 2rem !important;
+    padding: 0 !important;
+  }
+
+  .bibliography .publication-section + .publication-section {
+    border-top: 1px solid #e5e5e5 !important;
+    margin-top: 2.15rem !important;
+    padding-top: 1.15rem !important;
+  }
+
+  .bibliography .publication-section-header {
+    margin: 0 0 0.85rem !important;
+    padding: 0 !important;
+  }
+
+  .bibliography .publication-section-header h4 {
+    color: #2f2f2f !important;
+    font-size: 1.08rem !important;
+    font-weight: 700 !important;
+    letter-spacing: 0;
+    margin: 0 !important;
+  }
+
+  .bibliography .publication-section:first-of-type {
+    margin-top: 0.35rem !important;
+  }
+</style>
+
 <div class="bibliography clearfix">
 
-  <h3 class="publication-section-title">Preprints</h3>
-
-  <div id="han2026raytold" class="col three">
-    <div style="clear: both;">
-      <div>
-        <img class="col bibone first" src="/assets/img/teasers/raytold.gif" alt="raytold teaser">
-      </div>
+  <section class="publication-section clearfix">
+    <div class="publication-section-header">
+      <h4>Journal Articles</h4>
     </div>
-    <div class="col bibtwo last">
-      <div class="title">RAY-TOLD: Ray-Based Latent Dynamics for Dense Dynamic Obstacle Avoidance with TDMPC</div>
-      <div class="author">Seungho Han, <strong>Seokju Lee</strong>, Jeonguk Kang</div>
-      <div class="periodical"><em>Preprint</em></div>
-
-      <div class="links">
-        [<a class="abstract">Abs</a>]
-        [<a href="https://arxiv.org/abs/2604.27450" target="_blank">arXiv</a>]
-      </div>
-
-      <div class="abstract hidden">
-        <p>Dense, dynamic crowds pose a persistent challenge for autonomous mobile robots. Purely reactive planning methods, such as Model Predictive Path Integral (MPPI) control, often fail to escape local minima in complex scenarios due to their limited prediction horizon. To bridge this gap, we propose Ray-based Task-Oriented Latent Dynamics (RAY-TOLD), a hybrid control architecture that integrates obstacle information into latent dynamics and utilizes the robustness of physics-based MPPI with the long-horizon foresight of reinforcement learning. RAY-TOLD leverages a LiDAR-centric latent dynamics model to encode high-dimensional sensor data into a compact state representation, enabling the learning of a terminal value function and a policy prior. We introduce a policy mixture sampling strategy that augments the MPPI candidate population with trajectories derived from the learned policy, effectively guiding the planner towards the goal while maintaining kinematic feasibility. Extensive tests in a stochastic environment with high-density dynamic obstacles demonstrate that our method outperforms the MPPI baseline, reducing the collision rate. The results confirm that blending short-horizon physics-based rollouts with learned long-horizon intent significantly enhances navigation reliability and safety.</p>
-      </div>
-    </div>
-  </div>
-
-  <h3 class="publication-section-title">Publications</h3>
-
-  <div id="lee2026dsr" class="col three">
-    <div style="clear: both;">
-      <div>
-        <img class="col bibone first" src="/assets/img/teasers/dsr.jpg" alt="dsr teaser">
-      </div>
-    </div>
-    <div class="col bibtwo last">
-      <div class="title">Learning Humanoid Locomotion via Disentangled State Reconstruction</div>
-      <div class="author"><strong>Seokju Lee</strong>, Jeonghyeok Lim, Jeongtae Lee, Jeonguk Kang, Seungho Han, Dongil Park, Kyung-Soo Kim</div>
-      <div class="periodical"><em>Under Review</em></div>
-
-      <!-- <div class="links">
-        [<a class="abstract">Abs</a>]
-        [<a href="https://arxiv.org/abs/2604.27450" target="_blank">arXiv</a>]
-      </div>
-
-      <div class="abstract hidden">
-        <p>Dense, dynamic crowds pose a persistent challenge for autonomous mobile robots. Purely reactive planning methods, such as Model Predictive Path Integral (MPPI) control, often fail to escape local minima in complex scenarios due to their limited prediction horizon. To bridge this gap, we propose Ray-based Task-Oriented Latent Dynamics (RAY-TOLD), a hybrid control architecture that integrates obstacle information into latent dynamics and utilizes the robustness of physics-based MPPI with the long-horizon foresight of reinforcement learning. RAY-TOLD leverages a LiDAR-centric latent dynamics model to encode high-dimensional sensor data into a compact state representation, enabling the learning of a terminal value function and a policy prior. We introduce a policy mixture sampling strategy that augments the MPPI candidate population with trajectories derived from the learned policy, effectively guiding the planner towards the goal while maintaining kinematic feasibility. Extensive tests in a stochastic environment with high-density dynamic obstacles demonstrate that our method outperforms the MPPI baseline, reducing the collision rate. The results confirm that blending short-horizon physics-based rollouts with learned long-horizon intent significantly enhances navigation reliability and safety.</p>
-      </div> -->
-    </div>
-  </div>
-
-  <div id="lee2026exo" class="col three">
-    <div style="clear: both;">
-      <div>
-        <img class="col bibone first" src="/assets/img/teasers/exo.png" alt="exo teaser">
-      </div>
-    </div>
-    <div class="col bibtwo last">
-      <div class="title">Optimal Load Distribution Strategy via Knee-Hip Coordinated Control for Heavy Load Lifting Assistance in Wearable Robots</div>
-      <div class="author">Byungwook Lee, Jeonguk Kang, <strong>Seokju Lee</strong>, Kwang Woo Jeon, Tae-Hwan Kim, Hyun-Joon Chung, Man Bok Hong, Jang Sik Park, Kyung-Soo Kim</div>
-      <div class="periodical"><em>The 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems
-          (IROS)</em></div>
-
-      <div class="links">
-        [<a class="abstract">Abs</a>] 
-        [<a href="" target="_blank">Paper (Coming Soon)</a>]
-       </div>
-
-       <div class="abstract hidden">
-        <p>This study presents an optimal load distribution strategy implemented on a newly developed knee-hip exoskeleton to assist repetitive lifting tasks. The coordinated control strategy defines a target height trajectory based on the lifting phase and generates real-time position references within feasible joint angle ranges, effectively reducing the physical burden on the knee and hip joints. The proposed method is integrated into the exoskeleton’s control framework, allowing for seamless task transition through automatic lifting detection. The algorithm was validated via dynamic simulations and real-time human experiments with a 30 kg payload. Simulation results demonstrated a significant reduction in joint torques, with energy expenditure decreasing by 20.5–28.4% for the knee and 6.96–9.65% for the hip. In real-time experiments, average muscle activation of the primary extensors decreased by 5.75–16.14%, alongside a reduction in peak activation levels. These findings confirm that the proposed coordinated control effectively enhances lifting assistance, suggesting high potential for position based motion control and weighted assistance strategies in industrial applications.</p>
-      </div> 
-    </div>
-  </div>
-
-  <div id="bangunharcana2026grpo" class="col three">
-    <div style="clear: both;">
-      <div>
-        <img class="col bibone first" src="/assets/img/teasers/grpo.png" alt="grpo teaser">
-      </div>
-    </div>
-    <div class="col bibtwo last">
-      <div class="title">Bridging Reactive Simulation and Log-Playback for Safer Autonomous Driving with GRPO</div>
-      <div class="author">Antyanta Bangunharcana, <strong>Seokju Lee</strong>, Seungho Han</div>
-      <div class="periodical"><em>The 2026 Asian Control Conference (ASCC)</em></div>
-
-      <div class="links"> 
-        [<a class="abstract">Abs</a>]
-        [<a href="" target="_blank">Paper (Coming Soon)</a>]
-      </div>
-
-      <div class="abstract hidden">
-        <p>Reinforcement learning (RL) in learned world models has recently enabled high-performing closed-loop planners for autonomous driving. However, these policies often exploit optimistic assumptions in the simulator: background agents are typically reactive and cooperative, while real traffic contains many non-reactive or adversarial drivers. This mismatch may lead to behaviors where the ego vehicle is not as safe around non-reactive agents. In this work, we build on the Plan-R1 framework and propose a training curriculum that explicitly mixtures reactive world-model agents with non-reactive log-playback trajectories to mitigate cooperative bias. First, we introduce Mixed-Reactivity Rollouts, which stochastically combine simulated and log-playback agents within the same scenario to expose the policy to a spectrum of interaction patterns while providing truth anchors that stabilize the world model. Second, we propose Identity Consistency, a variance-reduction technique for Group Relative Policy Optimization (GRPO) that keeps background agents and environment randomness fixed within each rollout group so that the advantage signal reflects policy changes rather than simulator noise. On the nuPlan benchmark, our curriculum reduces collision rates in non-reactive evaluation settings while maintaining competitive overall driving scores, demonstrating improved robustness to uncooperative agents.</p>
-      </div>
-    </div>
-  </div>
 
   <!-- Entry: AttenNKF (2026) -->
   <div id="lee2026attention" class="col three yellow-box">
@@ -124,43 +68,6 @@
           and encourages structured slip-conditioned compensations, while preserving the InEKF recursion. Experiments
           demonstrate improved performance compared to existing legged-robot state estimators, particularly under
           slip-prone conditions.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Entry: InNKF (2025) -->
-  <div id="lee2025legged" class="col three yellow-box">
-    <div style="clear: both;">
-      <div>
-        <img class="col bibone first" src="/assets/img/teasers/innkf.gif" alt="InNKF teaser">
-      </div>
-    </div>
-    <div class="col bibtwo last">
-      <div class="title">Legged Robot State Estimation Using Invariant Neural-Augmented Kalman Filter with a Neural
-        Compensator</div>
-      <div class="author"><strong>Seokju Lee</strong>, Hyun-Bin Kim, Kyung-Soo Kim</div>
-      <div class="periodical"><em>The 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems
-          (IROS)</em></div>
-
-      <div class="links">
-        [<a class="abstract">Abs</a>]
-        [<a href="http://arxiv.org/abs/2503.00344" target="_blank">arXiv</a>]
-        [<a href="https://ieeexplore.ieee.org/document/11247668" target="_blank">Paper</a>]
-        [<a href="https://seokju-lee.github.io/innkf_webpage/" target="_blank">Website</a>]
-      </div>
-
-      <div class="abstract hidden">
-        <p>This paper presents an algorithm to improve state estimation for legged robots. Among existing model-based
-          state estimation methods for legged robots, the contact-aided invariant extended Kalman filter defines the
-          state on a Lie group to preserve invariance, thereby significantly accelerating convergence. It achieves more
-          accurate state estimation by leveraging contact information as measurements for the update step. However, when
-          the model exhibits strong nonlinearity, the estimation accuracy decreases. Such nonlinearities can cause
-          initial errors to accumulate and lead to large drifts over time. To address this issue, we propose
-          compensating for errors by augmenting the Kalman filter with an artificial neural network serving as a
-          nonlinear function approximator. Furthermore, we design this neural network to respect the Lie group structure
-          to ensure invariance, resulting in our proposed Invariant Neural-Augmented Kalman Filter (InNKF). The proposed
-          algorithm offers improved state estimation performance by combining the strengths of model-based and
-          learning-based approaches.</p>
       </div>
     </div>
   </div>
@@ -241,6 +148,95 @@
     </div>
   </div>
 
+  </section>
+
+  <section class="publication-section clearfix">
+    <div class="publication-section-header">
+      <h4>Conference Papers</h4>
+    </div>
+
+  <div id="lee2026exo" class="col three">
+    <div style="clear: both;">
+      <div>
+        <img class="col bibone first" src="/assets/img/teasers/exo.png" alt="exo teaser">
+      </div>
+    </div>
+    <div class="col bibtwo last">
+      <div class="title">Optimal Load Distribution Strategy via Knee-Hip Coordinated Control for Heavy Load Lifting Assistance in Wearable Robots</div>
+      <div class="author">Byungwook Lee, Jeonguk Kang, <strong>Seokju Lee</strong>, Kwang Woo Jeon, Tae-Hwan Kim, Hyun-Joon Chung, Man Bok Hong, Jang Sik Park, Kyung-Soo Kim</div>
+      <div class="periodical"><em>The 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems
+          (IROS)</em></div>
+
+      <div class="links">
+        [<a class="abstract">Abs</a>] 
+        [<a href="" target="_blank">Paper (Coming Soon)</a>]
+       </div>
+
+       <div class="abstract hidden">
+        <p>This study presents an optimal load distribution strategy implemented on a newly developed knee-hip exoskeleton to assist repetitive lifting tasks. The coordinated control strategy defines a target height trajectory based on the lifting phase and generates real-time position references within feasible joint angle ranges, effectively reducing the physical burden on the knee and hip joints. The proposed method is integrated into the exoskeleton’s control framework, allowing for seamless task transition through automatic lifting detection. The algorithm was validated via dynamic simulations and real-time human experiments with a 30 kg payload. Simulation results demonstrated a significant reduction in joint torques, with energy expenditure decreasing by 20.5–28.4% for the knee and 6.96–9.65% for the hip. In real-time experiments, average muscle activation of the primary extensors decreased by 5.75–16.14%, alongside a reduction in peak activation levels. These findings confirm that the proposed coordinated control effectively enhances lifting assistance, suggesting high potential for position based motion control and weighted assistance strategies in industrial applications.</p>
+      </div> 
+    </div>
+  </div>
+
+  <div id="bangunharcana2026grpo" class="col three">
+    <div style="clear: both;">
+      <div>
+        <img class="col bibone first" src="/assets/img/teasers/grpo.png" alt="grpo teaser">
+      </div>
+    </div>
+    <div class="col bibtwo last">
+      <div class="title">Bridging Reactive Simulation and Log-Playback for Safer Autonomous Driving with GRPO</div>
+      <div class="author">Antyanta Bangunharcana, <strong>Seokju Lee</strong>, Seungho Han</div>
+      <div class="periodical"><em>The 2026 Asian Control Conference (ASCC)</em></div>
+
+      <div class="links"> 
+        [<a class="abstract">Abs</a>]
+        [<a href="" target="_blank">Paper (Coming Soon)</a>]
+      </div>
+
+      <div class="abstract hidden">
+        <p>Reinforcement learning (RL) in learned world models has recently enabled high-performing closed-loop planners for autonomous driving. However, these policies often exploit optimistic assumptions in the simulator: background agents are typically reactive and cooperative, while real traffic contains many non-reactive or adversarial drivers. This mismatch may lead to behaviors where the ego vehicle is not as safe around non-reactive agents. In this work, we build on the Plan-R1 framework and propose a training curriculum that explicitly mixtures reactive world-model agents with non-reactive log-playback trajectories to mitigate cooperative bias. First, we introduce Mixed-Reactivity Rollouts, which stochastically combine simulated and log-playback agents within the same scenario to expose the policy to a spectrum of interaction patterns while providing truth anchors that stabilize the world model. Second, we propose Identity Consistency, a variance-reduction technique for Group Relative Policy Optimization (GRPO) that keeps background agents and environment randomness fixed within each rollout group so that the advantage signal reflects policy changes rather than simulator noise. On the nuPlan benchmark, our curriculum reduces collision rates in non-reactive evaluation settings while maintaining competitive overall driving scores, demonstrating improved robustness to uncooperative agents.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Entry: InNKF (2025) -->
+  <div id="lee2025legged" class="col three yellow-box">
+    <div style="clear: both;">
+      <div>
+        <img class="col bibone first" src="/assets/img/teasers/innkf.gif" alt="InNKF teaser">
+      </div>
+    </div>
+    <div class="col bibtwo last">
+      <div class="title">Legged Robot State Estimation Using Invariant Neural-Augmented Kalman Filter with a Neural
+        Compensator</div>
+      <div class="author"><strong>Seokju Lee</strong>, Hyun-Bin Kim, Kyung-Soo Kim</div>
+      <div class="periodical"><em>The 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems
+          (IROS)</em></div>
+
+      <div class="links">
+        [<a class="abstract">Abs</a>]
+        [<a href="http://arxiv.org/abs/2503.00344" target="_blank">arXiv</a>]
+        [<a href="https://ieeexplore.ieee.org/document/11247668" target="_blank">Paper</a>]
+        [<a href="https://seokju-lee.github.io/innkf_webpage/" target="_blank">Website</a>]
+      </div>
+
+      <div class="abstract hidden">
+        <p>This paper presents an algorithm to improve state estimation for legged robots. Among existing model-based
+          state estimation methods for legged robots, the contact-aided invariant extended Kalman filter defines the
+          state on a Lie group to preserve invariance, thereby significantly accelerating convergence. It achieves more
+          accurate state estimation by leveraging contact information as measurements for the update step. However, when
+          the model exhibits strong nonlinearity, the estimation accuracy decreases. Such nonlinearities can cause
+          initial errors to accumulate and lead to large drifts over time. To address this issue, we propose
+          compensating for errors by augmenting the Kalman filter with an artificial neural network serving as a
+          nonlinear function approximator. Furthermore, we design this neural network to respect the Lie group structure
+          to ensure invariance, resulting in our proposed Invariant Neural-Augmented Kalman Filter (InNKF). The proposed
+          algorithm offers improved state estimation performance by combining the strengths of model-based and
+          learning-based approaches.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Entry: Legged Mobile Manipulation (2022) -->
   <div id="lee2022learning" class="col three">
     <div style="clear: both;">
@@ -272,6 +268,59 @@
       </div>
     </div>
   </div>
+
+  </section>
+
+  <section class="publication-section clearfix">
+    <div class="publication-section-header">
+      <h4>Preprints</h4>
+    </div>
+
+  <div id="lee2026dsr" class="col three">
+    <div style="clear: both;">
+      <div>
+        <img class="col bibone first" src="/assets/img/teasers/dsr.jpg" alt="dsr teaser">
+      </div>
+    </div>
+    <div class="col bibtwo last">
+      <div class="title">Learning Humanoid Locomotion via Disentangled State Reconstruction</div>
+      <div class="author"><strong>Seokju Lee</strong>, Jeonghyeok Lim, Jeongtae Lee, Jeonguk Kang, Seungho Han, Dongil Park, Kyung-Soo Kim</div>
+      <div class="periodical"><em>Under Review</em></div>
+
+      <!-- <div class="links">
+        [<a class="abstract">Abs</a>]
+        [<a href="https://arxiv.org/abs/2604.27450" target="_blank">arXiv</a>]
+      </div>
+
+      <div class="abstract hidden">
+        <p>Dense, dynamic crowds pose a persistent challenge for autonomous mobile robots. Purely reactive planning methods, such as Model Predictive Path Integral (MPPI) control, often fail to escape local minima in complex scenarios due to their limited prediction horizon. To bridge this gap, we propose Ray-based Task-Oriented Latent Dynamics (RAY-TOLD), a hybrid control architecture that integrates obstacle information into latent dynamics and utilizes the robustness of physics-based MPPI with the long-horizon foresight of reinforcement learning. RAY-TOLD leverages a LiDAR-centric latent dynamics model to encode high-dimensional sensor data into a compact state representation, enabling the learning of a terminal value function and a policy prior. We introduce a policy mixture sampling strategy that augments the MPPI candidate population with trajectories derived from the learned policy, effectively guiding the planner towards the goal while maintaining kinematic feasibility. Extensive tests in a stochastic environment with high-density dynamic obstacles demonstrate that our method outperforms the MPPI baseline, reducing the collision rate. The results confirm that blending short-horizon physics-based rollouts with learned long-horizon intent significantly enhances navigation reliability and safety.</p>
+      </div> -->
+    </div>
+  </div>
+
+  <div id="han2026raytold" class="col three">
+    <div style="clear: both;">
+      <div>
+        <img class="col bibone first" src="/assets/img/teasers/raytold.gif" alt="raytold teaser">
+      </div>
+    </div>
+    <div class="col bibtwo last">
+      <div class="title">RAY-TOLD: Ray-Based Latent Dynamics for Dense Dynamic Obstacle Avoidance with TDMPC</div>
+      <div class="author">Seungho Han, <strong>Seokju Lee</strong>, Jeonguk Kang</div>
+      <div class="periodical"><em>Preprint</em></div>
+
+      <div class="links">
+        [<a class="abstract">Abs</a>]
+        [<a href="https://arxiv.org/abs/2604.27450" target="_blank">arXiv</a>]
+      </div>
+
+      <div class="abstract hidden">
+        <p>Dense, dynamic crowds pose a persistent challenge for autonomous mobile robots. Purely reactive planning methods, such as Model Predictive Path Integral (MPPI) control, often fail to escape local minima in complex scenarios due to their limited prediction horizon. To bridge this gap, we propose Ray-based Task-Oriented Latent Dynamics (RAY-TOLD), a hybrid control architecture that integrates obstacle information into latent dynamics and utilizes the robustness of physics-based MPPI with the long-horizon foresight of reinforcement learning. RAY-TOLD leverages a LiDAR-centric latent dynamics model to encode high-dimensional sensor data into a compact state representation, enabling the learning of a terminal value function and a policy prior. We introduce a policy mixture sampling strategy that augments the MPPI candidate population with trajectories derived from the learned policy, effectively guiding the planner towards the goal while maintaining kinematic feasibility. Extensive tests in a stochastic environment with high-density dynamic obstacles demonstrate that our method outperforms the MPPI baseline, reducing the collision rate. The results confirm that blending short-horizon physics-based rollouts with learned long-horizon intent significantly enhances navigation reliability and safety.</p>
+      </div>
+    </div>
+  </div>
+
+  </section>
 
   <div style="clear:both;"></div>
 </div>

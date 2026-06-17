@@ -39,7 +39,7 @@ If you have any questions or would like to discuss ideas, feel free to reach out
 {: #nav-publications}
 ## __Publications__
 
-<p style="font-size:0.9em;color:#6b6b6b;margin-top:0.15rem;">*representative publications are highlighted in <span style="background-color: rgba(250, 255, 110, 0.467); padding: 2px 5px; border-radius: 4px; color: #6b6b6b;">yellow</span>.</p>
+<p style="font-size:0.9em;color:#6b6b6b;margin-top:0.15rem;margin-bottom:0.2rem;">*representative publications are highlighted in <span style="background-color: rgba(250, 255, 110, 0.467); padding: 2px 5px; border-radius: 4px; color: #6b6b6b;">yellow</span>.</p>
 
 {% include publications-static.html %}
 
