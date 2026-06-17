@@ -1,7 +1,33 @@
 <!-- Static publications include: reproduces thumbnail + metadata + links -->
 <div class="bibliography clearfix">
 
+  <h3 class="publication-section-title">Preprints</h3>
+
   <div id="han2026raytold" class="col three">
+    <div style="clear: both;">
+      <div>
+        <img class="col bibone first" src="/assets/img/teasers/raytold.gif" alt="raytold teaser">
+      </div>
+    </div>
+    <div class="col bibtwo last">
+      <div class="title">RAY-TOLD: Ray-Based Latent Dynamics for Dense Dynamic Obstacle Avoidance with TDMPC</div>
+      <div class="author">Seungho Han, <strong>Seokju Lee</strong>, Jeonguk Kang</div>
+      <div class="periodical"><em>Preprint</em></div>
+
+      <div class="links">
+        [<a class="abstract">Abs</a>]
+        [<a href="https://arxiv.org/abs/2604.27450" target="_blank">arXiv</a>]
+      </div>
+
+      <div class="abstract hidden">
+        <p>Dense, dynamic crowds pose a persistent challenge for autonomous mobile robots. Purely reactive planning methods, such as Model Predictive Path Integral (MPPI) control, often fail to escape local minima in complex scenarios due to their limited prediction horizon. To bridge this gap, we propose Ray-based Task-Oriented Latent Dynamics (RAY-TOLD), a hybrid control architecture that integrates obstacle information into latent dynamics and utilizes the robustness of physics-based MPPI with the long-horizon foresight of reinforcement learning. RAY-TOLD leverages a LiDAR-centric latent dynamics model to encode high-dimensional sensor data into a compact state representation, enabling the learning of a terminal value function and a policy prior. We introduce a policy mixture sampling strategy that augments the MPPI candidate population with trajectories derived from the learned policy, effectively guiding the planner towards the goal while maintaining kinematic feasibility. Extensive tests in a stochastic environment with high-density dynamic obstacles demonstrate that our method outperforms the MPPI baseline, reducing the collision rate. The results confirm that blending short-horizon physics-based rollouts with learned long-horizon intent significantly enhances navigation reliability and safety.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 class="publication-section-title">Publications</h3>
+
+  <div id="lee2026dsr" class="col three">
     <div style="clear: both;">
       <div>
         <img class="col bibone first" src="/assets/img/teasers/dsr.jpg" alt="dsr teaser">
@@ -23,28 +49,6 @@
     </div>
   </div>
 
-  <div id="han2026raytold" class="col three">
-    <div style="clear: both;">
-      <div>
-        <img class="col bibone first" src="/assets/img/teasers/raytold.gif" alt="raytold teaser">
-      </div>
-    </div>
-    <div class="col bibtwo last">
-      <div class="title">RAY-TOLD: Ray-Based Latent Dynamics for Dense Dynamic Obstacle Avoidance with TDMPC</div>
-      <div class="author">Seungho Han, <strong>Seokju Lee</strong>, Jeonguk Kang</div>
-      <div class="periodical"><em>Under Review</em></div>
-
-      <div class="links">
-        [<a class="abstract">Abs</a>]
-        [<a href="https://arxiv.org/abs/2604.27450" target="_blank">arXiv</a>]
-      </div>
-
-      <div class="abstract hidden">
-        <p>Dense, dynamic crowds pose a persistent challenge for autonomous mobile robots. Purely reactive planning methods, such as Model Predictive Path Integral (MPPI) control, often fail to escape local minima in complex scenarios due to their limited prediction horizon. To bridge this gap, we propose Ray-based Task-Oriented Latent Dynamics (RAY-TOLD), a hybrid control architecture that integrates obstacle information into latent dynamics and utilizes the robustness of physics-based MPPI with the long-horizon foresight of reinforcement learning. RAY-TOLD leverages a LiDAR-centric latent dynamics model to encode high-dimensional sensor data into a compact state representation, enabling the learning of a terminal value function and a policy prior. We introduce a policy mixture sampling strategy that augments the MPPI candidate population with trajectories derived from the learned policy, effectively guiding the planner towards the goal while maintaining kinematic feasibility. Extensive tests in a stochastic environment with high-density dynamic obstacles demonstrate that our method outperforms the MPPI baseline, reducing the collision rate. The results confirm that blending short-horizon physics-based rollouts with learned long-horizon intent significantly enhances navigation reliability and safety.</p>
-      </div>
-    </div>
-  </div>
-
   <div id="lee2026exo" class="col three">
     <div style="clear: both;">
       <div>
@@ -54,16 +58,17 @@
     <div class="col bibtwo last">
       <div class="title">Optimal Load Distribution Strategy via Knee-Hip Coordinated Control for Heavy Load Lifting Assistance in Wearable Robots</div>
       <div class="author">Byungwook Lee, Jeonguk Kang, <strong>Seokju Lee</strong>, Kwang Woo Jeon, Tae-Hwan Kim, Hyun-Joon Chung, Man Bok Hong, Jang Sik Park, Kyung-Soo Kim</div>
-      <div class="periodical"><em>Under Review</em></div>
+      <div class="periodical"><em>The 2026 IEEE/RSJ International Conference on Intelligent Robots and Systems
+          (IROS)</em></div>
 
-      <!-- <div class="links"> -->
-        <!-- [<a class="abstract">Abs</a>] -->
-        <!-- [<a href="https://arxiv.org/abs/2604.27450" target="_blank">arXiv</a>] -->
-      <!-- </div> -->
+      <div class="links">
+        [<a class="abstract">Abs</a>] 
+        [<a href="" target="_blank">Paper (Coming Soon)</a>]
+       </div>
 
-      <!-- <div class="abstract hidden">
+       <div class="abstract hidden">
         <p>This study presents an optimal load distribution strategy implemented on a newly developed knee-hip exoskeleton to assist repetitive lifting tasks. The coordinated control strategy defines a target height trajectory based on the lifting phase and generates real-time position references within feasible joint angle ranges, effectively reducing the physical burden on the knee and hip joints. The proposed method is integrated into the exoskeleton’s control framework, allowing for seamless task transition through automatic lifting detection. The algorithm was validated via dynamic simulations and real-time human experiments with a 30 kg payload. Simulation results demonstrated a significant reduction in joint torques, with energy expenditure decreasing by 20.5–28.4% for the knee and 6.96–9.65% for the hip. In real-time experiments, average muscle activation of the primary extensors decreased by 5.75–16.14%, alongside a reduction in peak activation levels. These findings confirm that the proposed coordinated control effectively enhances lifting assistance, suggesting high potential for position based motion control and weighted assistance strategies in industrial applications.</p>
-      </div> -->
+      </div> 
     </div>
   </div>
 

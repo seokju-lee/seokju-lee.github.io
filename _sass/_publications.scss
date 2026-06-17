@@ -21,6 +21,14 @@
     margin-top: 20px;
     list-style-type: none;
 
+    .publication-section-title {
+        clear: both;
+        color: $theme-color;
+        font-size: 1.2rem;
+        margin: 1.25rem 0 0.5rem;
+        padding-top: 0.25rem;
+    }
+
     /* Allow abstracts and hidden blocks for both list items and direct div entries */
     .hidden {
         font-size: $small-font-size;
