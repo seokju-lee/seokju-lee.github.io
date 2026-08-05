@@ -13,8 +13,10 @@ url: https://seokju-lee.github.io # the base hostname & protocol for your site
 baseurl: ""  # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 
-# google-analytics
-google_analytics: UA-92958928-1
+# analytics — GoatCounter (privacy-friendly, shows country breakdown)
+# Sign up at https://www.goatcounter.com/signup and put the site code here.
+# Dashboard will be at https://<code>.goatcounter.com
+goatcounter_code: seokju
 repo: http://github.com/seokju-lee
 youtube_username: seokjulee0322
 
