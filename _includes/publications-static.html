@@ -188,16 +188,16 @@
     <div class="col bibtwo last">
       <div class="title">Learning Humanoid Locomotion via Disentangled State Reconstruction</div>
       <div class="author"><strong>Seokju Lee</strong>, Jeonghyeok Lim, Jeongtae Lee, Jeonguk Kang, Seungho Han, Dongil Park, Kyung-Soo Kim</div>
-      <div class="periodical"><em>Under Review</em></div>
+      <div class="periodical"><em>The 2026 International Conference on Control, Automation and Systems (ICCAS)</em></div>
 
-      <!-- <div class="links">
+      <div class="links">
         [<a class="abstract">Abs</a>]
-        [<a href="https://arxiv.org/abs/2604.27450" target="_blank">arXiv</a>]
+        [<a href="" target="_blank">Paper (Coming Soon)</a>]
       </div>
 
       <div class="abstract hidden">
-        <p>Dense, dynamic crowds pose a persistent challenge for autonomous mobile robots. Purely reactive planning methods, such as Model Predictive Path Integral (MPPI) control, often fail to escape local minima in complex scenarios due to their limited prediction horizon. To bridge this gap, we propose Ray-based Task-Oriented Latent Dynamics (RAY-TOLD), a hybrid control architecture that integrates obstacle information into latent dynamics and utilizes the robustness of physics-based MPPI with the long-horizon foresight of reinforcement learning. RAY-TOLD leverages a LiDAR-centric latent dynamics model to encode high-dimensional sensor data into a compact state representation, enabling the learning of a terminal value function and a policy prior. We introduce a policy mixture sampling strategy that augments the MPPI candidate population with trajectories derived from the learned policy, effectively guiding the planner towards the goal while maintaining kinematic feasibility. Extensive tests in a stochastic environment with high-density dynamic obstacles demonstrate that our method outperforms the MPPI baseline, reducing the collision rate. The results confirm that blending short-horizon physics-based rollouts with learned long-horizon intent significantly enhances navigation reliability and safety.</p>
-      </div> -->
+        <p>This paper proposes a disentangled state reconstruction framework for humanoid locomotion. Proprioceptive humanoid locomotion over diverse terrains remains a challenging problem due to instability arising from bipedal contact. While quadrupedal robots exhibit high stability and can robustly traverse rough terrains, humanoid locomotion has a limitation in that it is difficult to handle such terrains without accurate terrain estimation. To address this issue, various methods have been proposed to estimate extrinsic states of the robot, such as terrain information, solely from observation history. However, since intrinsic and extrinsic states are estimated jointly, the representations become entangled, causing interference between the information required for each. To overcome this limitation, we propose Disentangled State Reconstruction (DSR), which separates state reconstruction based on temporal scales. Specifically, intrinsic states, such as the robot’s linear velocity, are reconstructed using short-term observation history, whereas extrinsic states, such as terrain information, are reconstructed using longer-term observation history. The proposed DSR demonstrates improved locomotion performance on most evaluated terrains in simulation, particularly on terrains involving discontinuous or irregular contact interactions.</p>
+      </div> 
     </div>
   </div>
 
