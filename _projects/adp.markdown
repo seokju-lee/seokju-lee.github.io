@@ -10,6 +10,7 @@ category: Legged robotics
 summary: "Replacing kinematic motion-style features with SRBD-derived dynamics features for perturbation-resilient humanoid locomotion."
 ---
 
+*Duration:* 2026.01 - 2026.07
 
 ***
 
@@ -71,7 +72,7 @@ The approach was also validated on a **Unitree G1** humanoid under both instanta
 
 ### Acknowledgement
 
-This work is conducted at the Mechatronics, Systems, and Control Laboratory, KAIST.
+This work was supported by R&D Project of Korea Institute of Machinery and Materials (No. NK261A).
 
 ### BibTeX
 
