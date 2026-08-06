@@ -5,6 +5,7 @@ description: Perturbation-resilient humanoid locomotion via adversarial dynamics
 date: 2026-01-15
 img: /assets/img/projects/adp/adp.png
 duration: "2026.01 - 2026.07"
+pinned: true
 tags: [Isaac Lab, Humanoid, Adversarial Motion Priors, Reinforcement Learning]
 category: Legged robotics
 summary: "Replacing kinematic motion-style features with SRBD-derived dynamics features for perturbation-resilient humanoid locomotion."
